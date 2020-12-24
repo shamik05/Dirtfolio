@@ -20,7 +20,6 @@
     "rules": {
         "indent": ["error", 2],
         "quotes": ["error","double"],
-        "no-console": "off",
-        
+        "no-console": "off"
     }
 }
