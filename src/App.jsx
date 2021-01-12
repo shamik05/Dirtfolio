@@ -1,16 +1,18 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
 
 const App = () => (
   <div className="App">
-    <Switch>
+    <BrowserRouter>
       <Header />
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   </div>
 );
 
