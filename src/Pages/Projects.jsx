@@ -8,7 +8,7 @@ const Projects = () => (
       {repos.map((e) => (
         <Card key={e.id}>
           <Card.Header>{e.name}</Card.Header>
-          <Card.Img variant="top" src={e.img} />
+          {/* <Card.Img variant="top" src={e.img} /> */}
           <Card.Body>
             <Card.Text>{e.description}</Card.Text>
           </Card.Body>

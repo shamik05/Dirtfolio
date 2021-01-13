@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 
 const Header = () => (
-  <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar bg="light" variant="light" expand="lg">
     <Navbar.Brand href="/">
       Dirtfolio
     </Navbar.Brand>
@@ -15,7 +15,7 @@ const Header = () => (
         <Nav.Link href="#skills">
           Skills
         </Nav.Link>
-        <Nav.Link href="/projects">
+        <Nav.Link href="#projects">
           Projects
         </Nav.Link>
       </Nav>
