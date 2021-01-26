@@ -1,0 +1,27 @@
+// .card-columns {
+//   @include media-breakpoint-up()
+// }
+// .card {
+//   width: 30%;
+// }
+
+.card-header {
+//   height: 4rem;
+  text-align: center;
+}
+
+// .card-body {
+//   height: 15rem;
+//   text-align: center;
+// }
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+//   height: 3.5rem;
+
+//   .btn, .btn-primary {
+//     display: flex;
+//     align-items: center;
+//   }
+}

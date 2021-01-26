@@ -9,7 +9,6 @@ const Home = () => (
     <Banner />
     <Projects />
   </>
-
 );
 
 export default Home;

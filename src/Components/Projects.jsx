@@ -1,15 +1,16 @@
 import React from "react";
 import {
-  Container, CardDeck, Card, Badge,
+  Container, CardColumns, Card, Button, ButtonGroup,
 } from "react-bootstrap";
 import repos from "../helpers/constants";
+import "./Projects.scss";
 
 const Projects = () => (
   <Container>
-    <CardDeck>
+    <CardColumns>
       {repos.map((e) => (
         <Card key={e.id}>
-          <Card.Header>{e.name}</Card.Header>
+          <Card.Header><h3>{e.name}</h3></Card.Header>
           {/* <Card.Img variant="top" src={e.img} /> */}
 
           <Card.Body>
@@ -17,13 +18,14 @@ const Projects = () => (
           </Card.Body>
 
           <Card.Footer>
-            {e.tech.map((t) => (
-              <Badge pill variant="light">{t}</Badge>
-            ))}
+            <ButtonGroup size="md" aria-label="Project Links">
+              <Button target="_blank" rel="noreferrer" href={e.repo}>Repo</Button>
+              <Button target="_blank" rel="noreferrer" href={e.depo}>Deploy</Button>
+            </ButtonGroup>
           </Card.Footer>
         </Card>
       ))}
-    </CardDeck>
+    </CardColumns>
   </Container>
 );
 
