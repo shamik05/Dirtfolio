@@ -1,21 +1,35 @@
-// .projectContainer {
-//  width: 90vw;
-//  margin: 0;
-//  padding: 0;
-
 .projectDeck {
   margin: 0;
   padding: 0;
-  width: 80vw;
+  width: 90vw;
   justify-content: space-evenly;
   display: flex;
   text-align: center;
+  color: black;
 
   .projectCard {
     padding: 0;
     margin: 20px 0;
-    height: 25rem;
-    width: 20rem;
+    height: 28rem;
+    width: 28rem;
     flex: inherit;
+    border-radius: 20px;
+
+    .card-body {
+      .still {
+        position: absolute;
+        background: white;
+        width: 90%;
+        opacity: 0.8;
+      }
+
+      .still:hover {
+        opacity: 0;
+      }
+
+      .play {
+        // display: none;
+      }
+    }
   }
 }
