@@ -10,8 +10,7 @@ const Banner = () => (
         <Badge pill variant="info">Dirtfolio!</Badge>
       </h1>
       <p>
-        This is a simple hero unit, a simple jumbotron-style component for calling
-        extra attention to featured content or information.
+        Welcome to the greatest portfolio on the world wide web on Earth with the least amount of redundancy possible!
       </p>
     </Jumbotron>
   </>

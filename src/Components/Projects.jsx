@@ -1,26 +1,9 @@
-/* eslint-disable no-return-assign */
-/* eslint-disable no-unused-vars */
-/* eslint-disable prefer-template */
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable global-require */
 import React from "react";
 import {
   CardDeck, Card, Button, ButtonGroup,
 } from "react-bootstrap";
 import repos from "../helpers/constants";
 import "./Projects.scss";
-// import bow from "../Assets/bow.gif";
-// import bowStill from "../Assets/bowStill.png";
-// import bw from "../Assets/bw.gif";
-// import bwStill from "../Assets/bwStill.png";
-// import lsd from "../Assets/lsd.gif";
-// import lsdStill from "../Assets/lsdStill.png";
-// import nec from "../Assets/nec.gif";
-// import necStill from "../Assets/necStill.png";
-// import red from "../Assets/red.gif";
-// import redStill from "../Assets/redStill.png";
-// import wgw from "../Assets/wgw.gif";
-// import wgwStill from "../Assets/wgwStill.png";
 
 const Projects = () => (
   <CardDeck id="projects" className="projectDeck mx-auto">
@@ -30,13 +13,12 @@ const Projects = () => (
         <Card.Text>{e.description}</Card.Text>
 
         <Card.Body>
-          <Card.Img className="still" src={require(`../Assets/${e.id}Still.png`).default} />
-          <Card.Img className="play" src={require(`../Assets/${e.id}.gif`).default} />
-          {/* <img src={require(`../Assets/${e.id}.gif`).default} alt={e.name} /> */}
+          <Card.Img className="still" alt={`${e.name} Still`} src={require(`../Assets/Stills/${e.id}.png`).default} />
+          <Card.Img className="play" alt={`${e.name} GIF`} src={require(`../Assets/Gifs/${e.id}.gif`).default} />
         </Card.Body>
 
         <Card.Footer>
-          <ButtonGroup size="md" aria-label="Project Links">
+          <ButtonGroup size="lg" aria-label="Project Links">
             <Button target="_blank" rel="noreferrer" href={e.repo}>Repo</Button>
             <Button target="_blank" rel="noreferrer" href={e.depo}>Deploy</Button>
           </ButtonGroup>

@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 const repos = [
   {
     name: "Balls of War",
@@ -16,38 +15,38 @@ const repos = [
     repo: "https://github.com/kambiz-frounchi/WheelsGoneWild",
     depo: "https://wheelsgonewild.herokuapp.com",
   },
-  // {
-  //   name: "LSD",
-  //   id: "lsd",
-  //   description: "An exchange-neutral tool designed for the modern cryptocurrency traders.",
-  //   tech: ["HTML", "CSS3", "APIs", "jQUery", "Chartjs", "Momentjs", "Materialize", "Material Design"],
-  //   repo: "https://github.com/shamik05/LSD-Snapshot",
-  //   depo: "https://lsd-snapshot.herokuapp.com",
-  // },
-  // {
-  //   name: "BookWorm",
-  //   id: "bw",
-  //   description: "MERN app to search for books with the Google API with built in save and alert functionality.",
-  //   tech: ["Mongo", "Express", "React", "Node", "Mongoose", "React-Router", "Socket.IO", "Axios"],
-  //   repo: "https://github.com/shamik05/BookWorm",
-  //   depo: "https://bookwormmern.herokuapp.com",
-  // },
-  // {
-  //   name: "Employee Directory",
-  //   id: "red",
-  //   description: "Employee tracker built with react including a sort and filter functionality.",
-  //   tech: ["React", "Node", "React-Router", "Axios"],
-  //   repo: "https://github.com/shamik05/Employee-Directory",
-  //   depo: "https://shamik05.github.io/Employee-Directory/",
-  // },
-  // {
-  //   name: "Employee CMS",
-  //   id: "nec",
-  //   description: "A node based CMS for employee management using the Inquirer library.",
-  //   tech: ["Node", "Inquirer", "MySQL", "Figlet"],
-  //   repo: "https://github.com/shamik05/Employee-CMS",
-  //   depo: "https://github.com/shamik05/Employee-CMS",
-  // },
+  {
+    name: "LSD",
+    id: "lsd",
+    description: "An exchange-neutral tool designed for the modern cryptocurrency traders.",
+    tech: ["HTML", "CSS3", "APIs", "jQUery", "Chartjs", "Momentjs", "Materialize", "Material Design"],
+    repo: "https://github.com/shamik05/LSD-Snapshot",
+    depo: "https://lsd-snapshot.herokuapp.com",
+  },
+  {
+    name: "BookWorm",
+    id: "bw",
+    description: "MERN app to search for books with the Google API with built in save and alert functionality.",
+    tech: ["Mongo", "Express", "React", "Node", "Mongoose", "React-Router", "Socket.IO", "Axios"],
+    repo: "https://github.com/shamik05/BookWorm",
+    depo: "https://bookwormmern.herokuapp.com",
+  },
+  {
+    name: "Employee Directory",
+    id: "red",
+    description: "Employee tracker built with react including a sort and filter functionality.",
+    tech: ["React", "Node", "React-Router", "Axios"],
+    repo: "https://github.com/shamik05/Employee-Directory",
+    depo: "https://shamik05.github.io/Employee-Directory/",
+  },
+  {
+    name: "Employee CMS",
+    id: "nec",
+    description: "A node based CMS for employee management using the Inquirer library.",
+    tech: ["Node", "Inquirer", "MySQL", "Figlet"],
+    repo: "https://github.com/shamik05/Employee-CMS",
+    depo: "https://github.com/shamik05/Employee-CMS",
+  },
 ];
 
 export default repos;
