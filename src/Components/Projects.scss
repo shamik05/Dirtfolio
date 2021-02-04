@@ -1,7 +1,11 @@
+.projectContainer {
+  margin: 0;
+  padding: 0;
+}
 .projectDeck {
   margin: 0;
   padding: 0;
-  width: 90vw;
+  width: 100%;
   justify-content: space-evenly;
   display: flex;
   text-align: center;
@@ -19,7 +23,7 @@
 
   .projectCard {
     padding: 0;
-    margin: 20px 0;
+    margin: 50px 50px;
     height: 28rem;
     width: 28rem;
     flex: inherit;
@@ -38,11 +42,11 @@
     .card-body {
       margin: 0;
       padding: 0;
+
       .still {
         position: absolute;
         background: white;
         width: 100%;
-        // opacity: 0.8;
       }
 
       .still:hover {
