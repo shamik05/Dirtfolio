@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 /* eslint-disable no-unused-vars */
 /* eslint-disable prefer-template */
 /* eslint-disable import/no-dynamic-require */
@@ -21,30 +22,28 @@ import "./Projects.scss";
 // import wgw from "../Assets/wgw.gif";
 // import wgwStill from "../Assets/wgwStill.png";
 
-const Projects = () => {
-  const requestImageFile = require.context("../Assets", true, /\.\..png$/);
-  return (
-    <CardDeck id="projects" className="projectDeck mx-auto">
-      {repos.map((e) => (
-        <Card className="projectCard" key={e.id}>
-          <Card.Header><h3>{e.name}</h3></Card.Header>
-          <Card.Text>{e.description}</Card.Text>
+const Projects = () => (
+  <CardDeck id="projects" className="projectDeck mx-auto">
+    {repos.map((e) => (
+      <Card className="projectCard" key={e.id}>
+        <Card.Header><h3>{e.name}</h3></Card.Header>
+        <Card.Text>{e.description}</Card.Text>
 
-          <Card.Body>
-            {/* <Card.Img className="still" src={require(`../Assets/${e.id}.gif`)} /> */}
-            <Card.Img className="play" src={requestImageFile(`./${e.id}Still.png`)} />
-          </Card.Body>
+        <Card.Body>
+          <Card.Img className="still" src={require(`../Assets/${e.id}Still.png`).default} />
+          <Card.Img className="play" src={require(`../Assets/${e.id}.gif`).default} />
+          {/* <img src={require(`../Assets/${e.id}.gif`).default} alt={e.name} /> */}
+        </Card.Body>
 
-          <Card.Footer>
-            <ButtonGroup size="md" aria-label="Project Links">
-              <Button target="_blank" rel="noreferrer" href={e.repo}>Repo</Button>
-              <Button target="_blank" rel="noreferrer" href={e.depo}>Deploy</Button>
-            </ButtonGroup>
-          </Card.Footer>
-        </Card>
-      ))}
-    </CardDeck>
-  );
-};
+        <Card.Footer>
+          <ButtonGroup size="md" aria-label="Project Links">
+            <Button target="_blank" rel="noreferrer" href={e.repo}>Repo</Button>
+            <Button target="_blank" rel="noreferrer" href={e.depo}>Deploy</Button>
+          </ButtonGroup>
+        </Card.Footer>
+      </Card>
+    ))}
+  </CardDeck>
+);
 
 export default Projects;

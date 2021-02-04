@@ -7,8 +7,6 @@ const repos = [
     tech: ["Mongo", "Express", "React", "Node", "MySQL", "React-Router", "Sass", "Bootstrap", "Passport"],
     repo: "https://github.com/liam-mack/Balls-of-War",
     depo: "https://balls-of-war.herokuapp.com",
-    gif: "../Assets/bow.gif",
-    still: "../Assets/bowStill.png",
   },
   {
     name: "Wheels Gone Wild",
@@ -17,8 +15,6 @@ const repos = [
     tech: ["Express", "Handlebars", "Fileupload", "Node", "MySQL", "Sequelize", "Passport"],
     repo: "https://github.com/kambiz-frounchi/WheelsGoneWild",
     depo: "https://wheelsgonewild.herokuapp.com",
-    gif: "../Assets/wgw.gif",
-    still: "../Assets/wgwStill.png",
   },
   // {
   //   name: "LSD",
