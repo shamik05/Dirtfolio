@@ -23,7 +23,9 @@
         "no-console": "off",
         "global-require": "off",
         "import/no-dynamic-require": 0,
-        "max-len": ["off"]
-        
+        "max-len": ["off"],
+        "no-restricted-imports": [
+            "error", {"patterns": ["@material-ui/*/*/*", "!@material-ui/core/test-utils/*"]}
+          ]
     }
 }

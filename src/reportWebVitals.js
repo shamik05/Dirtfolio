@@ -13,3 +13,7 @@ const reportWebVitals = (onPerfEntry) => {
 };
 
 export default reportWebVitals;
+
+// "@testing-library/jest-dom": "^5.11.6",
+// "@testing-library/react": "^11.2.5",
+// "@testing-library/user-event": "^12.6.3",

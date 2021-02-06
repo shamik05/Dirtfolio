@@ -5,11 +5,10 @@ body, #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: sans-serif;
+  background: rgb(245, 229, 229);
 }
 
-h3 {
-  margin-bottom: 0;
-  padding: 0;
-}
-
-@import "~bootstrap/scss/bootstrap.scss";
+// h3 {
+//   margin-bottom: 0;
+//   padding: 0;
+// }
