@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import cx from "clsx";
 import {
-  Card, CardMedia, CardContent, Button, Typography, makeStyles,
+  Card, CardMedia, CardContent, Button, Typography, makeStyles, CardActions, Divider,
 } from "@material-ui/core";
-import { useBlogTextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/blog";
-import { useOverShadowStyles } from "@mui-treasury/styles/shadow/over";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LaunchOutlinedIcon from "@material-ui/icons/LaunchOutlined";
 
 const useStyles = makeStyles(({ breakpoints, spacing }) => ({
-  root: {
+  card: {
     margin: "auto auto 5% auto",
     borderRadius: spacing(2), // 16px
     transition: "0.3s",
@@ -21,6 +20,10 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    "&:hover": {
+      transform: "translateY(2px)",
+      boxShadow: "0 4px 20px 0 rgba(0,0,0,0.12)",
+    },
     [breakpoints.up("md")]: {
       flexDirection: "column",
       // paddingTop: spacing(2),
@@ -28,12 +31,10 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   },
   media: {
     width: "88%",
-    // marginLeft: "auto",
-    // marginRight: "auto",
     marginTop: spacing(-3),
-    // height: 1,
-    // paddingBottom: "48%",
     borderRadius: spacing(2),
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
     backgroundColor: "#fff",
     backgroundSize: "contain",
     position: "relative",
@@ -75,51 +76,66 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     letterSpacing: "0.00938em",
     fontFamily: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif",
   },
-  content: {
-    padding: 24,
-    // width: "50%",
+  cardActions: {
+    paddingLeft: 0,
   },
-  cta: {
-    marginTop: 24,
-    textTransform: "initial",
+  button: {
+    color: "#ffffff",
+    boxShadow: "0px 4px 32px rgba(252, 56, 56, 0.4)",
+    paddingLeft: "24px",
+    borderRadius: "100px",
+    paddingRight: "24px",
+    backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
   },
 }));
+
 // React.memo
-const ProjectCard = (({ id, description, name }) => {
-  const styles = useStyles();
-  // const { button: buttonStyles, ...contentStyles } = useBlogTextInfoContentStyles();
-  const { button: buttonStyles } = useBlogTextInfoContentStyles();
-  const shadowStyles = useOverShadowStyles();
+const ProjectCard = (({
+  id, description, name, repo, depo,
+}) => {
+  const {
+    card, media, overline, heading, body, button, cardActions,
+  } = useStyles();
 
   return (
-    <Card className={cx(styles.root, shadowStyles.root)}>
+    <Card className={card}>
       <CardMedia
-        className={styles.media}
+        className={media}
         component="img"
         alt={name}
         title={name}
         src={require(`../Assets/Stills/${id}.png`).default}
       />
       <CardContent>
-        <Typography component="span" className={styles.overline}>
+        <Typography component="span" className={overline}>
           28 MAR 2019
         </Typography>
 
-        <Typography component="h4" className={styles.heading}>
+        <Typography component="h4" className={heading}>
           {name}
         </Typography>
 
-        <Typography component="p" className={styles.body}>
+        <Typography component="p" className={body}>
           {description}
         </Typography>
-        {/* <TextInfoContent
-          classes={contentStyles}
-          overline="28 MAR 2019"
-          heading={name}
-          body={description}
-        /> */}
-        <Button className={buttonStyles}>Read More</Button>
-        <Button className={buttonStyles}>Visit Site</Button>
+
+        <Divider />
+        <CardActions className={cardActions}>
+          <Button
+            className={button}
+            startIcon={<GitHubIcon />}
+            href={repo}
+          >
+            Read More
+          </Button>
+          <Button
+            className={button}
+            startIcon={<LaunchOutlinedIcon />}
+            href={depo}
+          >
+            Visit Site
+          </Button>
+        </CardActions>
       </CardContent>
     </Card>
   );
@@ -129,6 +145,8 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+  depo: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
