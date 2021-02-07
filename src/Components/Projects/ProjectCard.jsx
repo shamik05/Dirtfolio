@@ -89,8 +89,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
   },
 }));
 
-// React.memo
-const ProjectCard = (({
+const ProjectCard = React.memo(({
   id, description, name, repo, depo,
 }) => {
   const {
@@ -104,7 +103,7 @@ const ProjectCard = (({
         component="img"
         alt={name}
         title={name}
-        src={require(`../Assets/Stills/${id}.png`).default}
+        src={require(`../../Assets/Stills/${id}.png`).default}
       />
       <CardContent>
         <Typography component="span" className={overline}>
@@ -125,6 +124,8 @@ const ProjectCard = (({
             className={button}
             startIcon={<GitHubIcon />}
             href={repo}
+            target="_blank"
+            rel="noopener"
           >
             Read More
           </Button>
@@ -132,6 +133,8 @@ const ProjectCard = (({
             className={button}
             startIcon={<LaunchOutlinedIcon />}
             href={depo}
+            target="_blank"
+            rel="noopener"
           >
             Visit Site
           </Button>

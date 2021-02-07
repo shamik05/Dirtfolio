@@ -1,9 +1,10 @@
 import React from "react";
-import Projects from "./Components/Projects";
+import Projects from "./Pages/Projects";
+import Skills from "./Pages/Skills";
 
 const App = () => (
   <>
-    <h1>Projects</h1>
+    <Skills />
     <Projects />
   </>
 );

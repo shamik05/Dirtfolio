@@ -18,7 +18,7 @@ const repos = [
   {
     name: "LSD",
     id: "lsd",
-    description: "An exchange-neutral tool designed for the modern cryptocurrency traders.",
+    description: "An exchange-neutral tool designed for the modern crypto-currency traders.",
     tech: ["HTML", "CSS3", "APIs", "jQUery", "Chartjs", "Momentjs", "Materialize", "Material Design"],
     repo: "https://github.com/shamik05/LSD-Snapshot",
     depo: "https://lsd-snapshot.herokuapp.com",
