@@ -23,7 +23,7 @@ const Skills = () => {
         align="center"
         component="h2"
         variant="h2"
-        gutterBottom
+        gutterBottom={false}
         id="Skills"
       >
         SKILLS

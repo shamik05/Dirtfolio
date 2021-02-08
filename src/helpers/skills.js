@@ -16,7 +16,16 @@ const data = [
     id: "2.2", parent: "1.0", name: "CSS3", value: 1,
   },
   {
+    id: "3.0", parent: "2.2", name: "Sass", value: 1,
+  },
+  {
     id: "2.3", parent: "1.0", name: "JAVASCRIPT", value: 1,
+  },
+  {
+    id: "3.1", parent: "2.3", name: "Node.js", value: 1,
+  },
+  {
+    id: "3.2", parent: "2.3", name: "TypeScript.js", value: 1,
   },
   {
     id: "2.4", parent: "1.0", name: "HANDLEBARS.js", value: 1,
@@ -81,9 +90,9 @@ const data = [
   {
     id: "2.22", parent: "1.3", name: "AWS", value: 1,
   },
-  {
-    id: "2.23", parent: "1.3", name: "Git Version Control", value: 1,
-  },
+  // {
+  //   id: "2.23", parent: "1.3", name: "Git Version Control", value: 1,
+  // },
   {
     id: "2.24", parent: "1.3", name: "GitHub", value: 1,
   },
@@ -93,6 +102,111 @@ const data = [
   {
     id: "2.26", parent: "1.3", name: "ESLint", value: 1,
   },
+  {
+    id: "2.27", parent: "1.3", name: "Dynamics CRM", value: 1,
+  },
 ];
 
-export default data;
+const options = {
+  chart: {
+    height: "54%",
+    // width: 1000,
+    backgroundColor: "rgb(213 228 255)",
+    shadow: true,
+    type: "sunburst",
+    style: {
+      fontFamily: "Arial",
+    },
+    margin: [0, 0, 0, 0],
+  },
+  title: {
+    text: undefined,
+  },
+  credits: {
+    enabled: false,
+  },
+  loading: {
+    hideDuration: 1000,
+    showDuration: 1000,
+  },
+  series: [{
+    type: "sunburst",
+    data,
+    allowDrillToNode: true,
+    allowTraversingTree: true,
+    cursor: "pointer",
+    accessibility: {
+      description: "A sunburst chart of my skills",
+      enabled: true,
+      exposeAsGroupOnly: true,
+    },
+    animation: {
+      duration: 1500,
+    },
+    borderColor: null,
+    dataLabels: {
+      enabled: true,
+      crop: true,
+      format: "{point.name}",
+      padding: 0,
+      // rotationMode: "circular",
+      shadow: true,
+      style: {
+        fontSize: "20px",
+        color: "black",
+        textOutline: "0px",
+      },
+    },
+    description: "A sunburst chart of my skills",
+    shadow: true,
+    size: "100%",
+    traverseUpButton: {
+      align: "right",
+    },
+    levels: [{
+      level: 1,
+      levelIsConstant: true,
+      levelSize: {
+        unit: "pixels",
+        value: 0,
+      },
+    },
+    {
+      level: 2,
+      colorByPoint: true,
+      levelSize: {
+        unit: "percentage",
+        value: 35,
+      },
+    },
+    {
+      level: 3,
+      colorVariation: {
+        key: "brightness",
+        to: -0.2,
+      },
+    }],
+  }],
+  plotOptions: {
+    sunburst: {
+      center: ["50%", "50%"],
+    },
+  },
+  tooltip: {
+    headerFormat: "",
+    pointFormat: "{point.name}",
+    fontSize: "100",
+    fontWeight: "bold",
+    backgroundColor: {
+      linearGradient: [0, 0, 0, 60],
+      stops: [
+        [0, "#FFFFFF"],
+        [1, "#E0E0E0"],
+      ],
+    },
+    borderWidth: 1,
+    borderColor: "#AAA",
+  },
+};
+
+export default options;
