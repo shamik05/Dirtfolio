@@ -83,7 +83,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     color: "#ffffff",
     boxShadow: "0px 4px 32px rgba(252, 56, 56, 0.4)",
     paddingLeft: "24px",
-    borderRadius: "100px",
+    // borderRadius: "100px",
     paddingRight: "24px",
     backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
   },

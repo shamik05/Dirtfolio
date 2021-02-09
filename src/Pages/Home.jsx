@@ -1,16 +1,38 @@
+import { makeStyles, Grid, Typography } from "@material-ui/core";
 import React from "react";
-import BlogCardDemo from "../Components/BlogCardDemo";
-// import Banner from "../Components/Banner";
-// import Header from "../Components/Header";
-// import Projects from "../Components/Projects";
+import Header from "../Components/Home/Header";
 
-const Home = () => (
-  <>
-    {/* <Header />
-    <Banner /> */}
-    {/* <Projects /> */}
-    <BlogCardDemo />
-  </>
-);
+const useStyles = makeStyles(() => ({
+}
+));
+
+const Home = () => {
+  const styles = useStyles();
+  console.log(styles);
+
+  return (
+    <>
+      <Header />
+      <Grid
+        container
+        alignContent="center"
+        justify="center"
+      >
+        <Grid item>
+          <Typography
+            align="center"
+            component="h2"
+            variant="h2"
+            gutterBottom
+            id="Projects"
+          >
+            HOME
+          </Typography>
+
+        </Grid>
+      </Grid>
+    </>
+  );
+};
 
 export default Home;
