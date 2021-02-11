@@ -1,18 +1,23 @@
 /* eslint-disable */
 import React from "react";
 import {
-  AppBar, Link, makeStyles, Toolbar, Typography,
+  AppBar, Link, makeStyles, Toolbar, Typography, Grid
 } from "@material-ui/core";
 import HideOnscroll from "./Scroll";
 import Navlinks from "./Navlinks";
 
 const useStyles = makeStyles(({ spacing }) => ({
   appBar: {
-    // padding: spacing(2),
+    padding: spacing(2),
   },
   toolBar: {
-    paddingLeft: spacing(6),
-    paddingRight: spacing(6),
+    paddingLeft: spacing(5),
+    paddingRight: spacing(5),
+    justifyContent: "space-between",
+    // padding: spacing(2)
+  },
+  toolBarNav: {
+    justifyContent: "inherit",
   },
   circleContainer: {
     display: "flex",
@@ -34,21 +39,29 @@ const useStyles = makeStyles(({ spacing }) => ({
 }));
 
 const Header = (props) => {
-  const { circle, toolBar, appBar } = useStyles();
+  const { circle, toolBar, appBar, toolBarNav } = useStyles();
   // const preventDefault = (event) => event.preventDefault();
 
   return (
     <HideOnscroll {...props}>
       <AppBar
+        className={appBar}
         color="primary"
       >
-        <Toolbar>
-          <Typography>
-            <Link href="/" color="textSecondary">
-              Portfolio
-            </Link>
-          </Typography>
-          {/* <Navlinks /> */}
+        <Toolbar className={toolBar}>
+          <Grid container className={toolBarNav} alignItems="center">
+            <Grid item s={2}>
+              <Typography>
+                <Link href="/" color="inherit">
+                  Portfolio
+                </Link>
+              </Typography>
+            </Grid>
+
+            <Grid item s={10}>
+              <Navlinks />
+            </Grid>
+          </Grid>
         </Toolbar>
         {/* <Toolbar /> */}
       </AppBar>

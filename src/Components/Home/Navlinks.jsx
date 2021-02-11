@@ -2,6 +2,7 @@
 import React from "react";
 import {
   Button,
+  Grid,
   IconButton,
   makeStyles,
 } from "@material-ui/core";
@@ -21,7 +22,13 @@ const Navlinks = () => {
   const { root } = useStyles();
 
   return (
-    <>
+    <Grid
+      container
+      justify="center"
+      spacing="5"
+      alignItems="center"
+    >
+      <Grid item spacing="0">
       <Button
         startIcon={<Code />}
         href="#skills"
@@ -31,7 +38,9 @@ const Navlinks = () => {
       >
         Skills
       </Button>
+      </Grid>
 
+      <Grid item>
       <Button
         startIcon={<Work />}
         href="#projects"
@@ -39,7 +48,9 @@ const Navlinks = () => {
       >
         Projects
       </Button>
+      </Grid>
 
+      <Grid item>
       <IconButton
         href="http://www.linkedin.com/in/shamik-h"
         color="inherit"
@@ -48,6 +59,9 @@ const Navlinks = () => {
       >
         <LinkedIn />
       </IconButton>
+      </Grid>
+
+      <Grid item>
       <IconButton
         href="https://github.com/shamik05"
         color="inherit"
@@ -56,16 +70,21 @@ const Navlinks = () => {
       >
         <GitHub />
       </IconButton>
+      </Grid>
+
+      <Grid item>
       <Button
         startIcon={<Email />}
         href="mailto:shamikhaldar05@gmail.com"
         color="inherit"
         target="_blank"
         rel="noopener"
+        variant="outlined"
       >
-        Email
+        contact me
       </Button>
-    </>
+      </Grid>
+    </Grid>
   );
 };
 export default Navlinks;
