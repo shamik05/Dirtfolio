@@ -1,4 +1,4 @@
-import { makeStyles, Grid, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import React from "react";
 import Header from "../Components/Home/Header";
 
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Grid
+      {/* <Grid
         container
         alignContent="center"
         justify="center"
@@ -30,7 +30,7 @@ const Home = () => {
           </Typography>
 
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 };

@@ -18,13 +18,13 @@ const Projects = () => {
       className={section}
       disableGutters
       maxWidth="xl"
+      id="projects"
     >
       <Typography
         align="center"
         component="h2"
         variant="h2"
         gutterBottom
-        id="Projects"
       >
         PROJECTS
       </Typography>

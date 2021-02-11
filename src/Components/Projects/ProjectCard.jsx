@@ -11,7 +11,9 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     margin: "auto auto 5% auto",
     borderRadius: spacing(2), // 16px
     transition: "0.3s",
-    boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
+    // boxShadow: "0 4px 20px 0 rgba(0,0,0,0.12)",
+    boxShadow: "rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px",
+    // boxShadow: "rgba(0, 0, 0, 0.2) 0px 6px 6px -3px, rgba(0, 0, 0, 0.14) 0px 10px 14px 1px, rgba(0, 0, 0, 0.12) 0px 4px 18px 3px",
     position: "relative",
     maxWidth: 750,
     marginLeft: "auto",
@@ -22,7 +24,8 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     alignItems: "center",
     "&:hover": {
       transform: "translateY(2px)",
-      boxShadow: "0 4px 20px 0 rgba(0,0,0,0.12)",
+      // boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
+      boxShadow: "rgba(0, 0, 0, 0.2) 0px 11px 15px -7px, rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px",
     },
     [breakpoints.up("md")]: {
       flexDirection: "column",
@@ -38,6 +41,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     backgroundColor: "#fff",
     backgroundSize: "contain",
     position: "relative",
+    // filter: "grayscale(100%)",
     [breakpoints.up("md")]: {
       width: "100%",
       // width: "88%",

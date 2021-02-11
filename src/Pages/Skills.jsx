@@ -18,6 +18,7 @@ const Skills = () => {
       className={section}
       disableGutters
       maxWidth="xl"
+      id="skills"
     >
       <Typography
         align="center"
