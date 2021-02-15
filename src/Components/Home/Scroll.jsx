@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useScrollTrigger, Slide } from "@material-ui/core";
 
-function HideOnscroll(props) {
+const HideOnscroll = (props) => {
   const { children, window } = props;
   const trigger = useScrollTrigger({
     // disableHysteresis: true,
@@ -19,7 +19,7 @@ function HideOnscroll(props) {
       {children}
     </Slide>
   );
-}
+};
 
 HideOnscroll.propTypes = {
   children: PropTypes.element.isRequired,
