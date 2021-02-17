@@ -1,10 +1,11 @@
 /* eslint-disable */
 import React from "react";
 import {
-  AppBar, Toolbar, Button, makeStyles, useScrollTrigger, Slide, IconButton, List, ListItem, Link, Hidden
+  AppBar, Toolbar, Button, makeStyles, useScrollTrigger, Slide, IconButton, List, ListItem, Link, Hidden, Fab
 } from "@material-ui/core";
-import { Home as HomeIcon } from "@material-ui/icons";
+import { Home as HomeIcon, KeyboardArrowUp } from "@material-ui/icons";
 import SideDrawer from "../Components/Home/SideDrawer";
+import BackToTop from "../Components/Home/BackToTop";
 
 const navLinks = [
   { title: "about", path: "/about-us" },
@@ -73,6 +74,13 @@ const Home = (props) => {
         </Toolbar>
       </AppBar>
       </HideOnScroll>
+
+      {/* <Toolbar id="back-to-top-anchor" /> */}
+      <BackToTop>
+        <Fab color="secondary" size="large" aria-label="scroll back to top">
+          <KeyboardArrowUp />
+        </Fab>
+      </BackToTop>
     </>
   );
 };
