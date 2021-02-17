@@ -1,12 +1,10 @@
 /* eslint-disable */
 import React from "react";
 import {
-  AppBar, Toolbar, Button, Typography, makeStyles, useScrollTrigger, Slide, IconButton, List, ListItem, ListItemText, Link
+  AppBar, Toolbar, Button, makeStyles, useScrollTrigger, Slide, IconButton, List, ListItem, Link, Hidden
 } from "@material-ui/core";
-import { Home as HomeIcon, Menu as MenuIcon } from "@material-ui/icons";
-// import MenuIcon from "@material-ui/icons/Menu";
-// import { MenuIcon } from "@material-ui/icons";
-// import Header from "../Components/Home/Header";
+import { Home as HomeIcon } from "@material-ui/icons";
+import SideDrawer from "../Components/Home/SideDrawer";
 
 const navLinks = [
   { title: "about", path: "/about-us" },
@@ -43,16 +41,6 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const SideDrawer = () => {
-  return (
-    <>
-    <IconButton edge="start" aria-label="menu">
-      <MenuIcon />
-    </IconButton>
-    </>
-  )
-};
-
 const Home = (props) => {
   const { toolbar, ul, a } = useStyles();
 
@@ -61,24 +49,27 @@ const Home = (props) => {
       <HideOnScroll {...props}>
       <AppBar position="static">
         <Toolbar className={toolbar}>
-          {/* <Container> */}
         <IconButton edge="start" color="inherit" aria-label="home">
           <HomeIcon fontSize="large" />
         </IconButton>
-        {/* </Container> */}
 
+        <Hidden mdDown>
           <List component="ul" aria-labelledby="main navigation" className={ul}>
-          {navLinks.map(({ title, path }) => (
-          <ListItem>
-            <Link href={path} component="a" variant="button" color="inherit">
-              {title}
-            </Link>
-          </ListItem>
-                  ))}
+            {navLinks.map(({ title, path }) => (
+            <ListItem key={title}>
+              <Link href={path} component="a" variant="button" color="inherit">
+                {title}
+              </Link>
+            </ListItem>
+            ))}
           </List>
-          {/* <SideDrawer /> */}
+        </Hidden>
 
-          <Button color="inherit">HIRE ME</Button>
+        <Hidden mdUp>
+        <SideDrawer navLinks={navLinks}/>
+        </Hidden>
+
+        <Button color="inherit">HIRE ME</Button>
         </Toolbar>
       </AppBar>
       </HideOnScroll>
