@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, makeStyles } from "@material-ui/core";
-import Project from "../Components/Projects/Project";
+import Project from "./Components/Projects/Project";
 
 const useStyles = makeStyles(() => ({
   section: {

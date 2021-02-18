@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, makeStyles } from "@material-ui/core";
-import Sunburst from "../Components/Skills/Chart";
+import Sunburst from "./Components/Skills/Chart";
 
 const useStyles = makeStyles(() => ({
   section: {

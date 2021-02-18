@@ -4,8 +4,8 @@ import {
   AppBar, Toolbar, Button, makeStyles, useScrollTrigger, Slide, IconButton, List, ListItem, Link, Hidden, Fab
 } from "@material-ui/core";
 import { Home as HomeIcon, KeyboardArrowUp } from "@material-ui/icons";
-import SideDrawer from "../Components/Home/SideDrawer";
-import BackToTop from "../Components/Home/BackToTop";
+import SideDrawer from "./Components/Home/SideDrawer";
+import BackToTop from "./Components/Home/BackToTop";
 
 const navLinks = [
   { title: "about", path: "/about-us" },

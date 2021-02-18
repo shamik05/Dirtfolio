@@ -123,4 +123,4 @@ dist
 .env.test.local
 .env.production.local
 
-/Assets/images
+images/

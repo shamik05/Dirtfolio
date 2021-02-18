@@ -40,7 +40,7 @@ font-family: "Poppins", sans-serif;
 .lineheight--1 {
     line-height: 1 !important;
 }
-.lineheight--1.5 {
+.lineheight--1-5 {
     line-height: 1.5!important;
 }
 .lineheight--1-8 {
@@ -138,9 +138,10 @@ font-family: "Poppins", sans-serif;
 }
 
 
-@for $i from 1 through 35 {
+@for $i from 1 through 32 {
     .bg_image--#{$i} {
-        background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
+        // background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
+        background-image: url("../images/bg/bg-image-#{$i}.jpg") !important;
     }
 }
 
