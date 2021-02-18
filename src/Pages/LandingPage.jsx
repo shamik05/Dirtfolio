@@ -1,5 +1,6 @@
 import React from "react";
 import TextLoop from "react-text-loop";
+// import ServiceList from "../Components/ServiceList";
 
 const SlideList = [
   {
@@ -46,6 +47,8 @@ const BlogContent = [
 ];
 
 const LandingPage = () => {
+  // const title = "About Me";
+  // const description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered <a href=\"#\">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,";
   const PostList = BlogContent.slice(0, 3);
   console.log(PostList);
 
@@ -85,6 +88,7 @@ const LandingPage = () => {
         </div>
       </div>
       {/* End Slider Area   */}
+
     </div>
 
   );

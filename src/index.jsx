@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import LandingPage from "./Pages/LandingPage";
+import About from "./Pages/About";
 import "./index.scss";
 
 const App = () => (
   <>
     <LandingPage />
+    <About />
   </>
 );
 
