@@ -4,7 +4,7 @@ import {
   FiCast, FiLayers, FiUsers, FiMonitor,
 } from "react-icons/fi";
 
-const ServiceList = [
+const list = [
   {
     icon: <FiCast />,
     title: "Business Stratagy",
@@ -37,8 +37,8 @@ const ServiceList = [
   },
 ];
 
-const ServiceThree = ({ column, item }) => {
-  const ServiceContent = ServiceList.slice(0, item);
+const ServicesList = ({ column, item }) => {
+  const ServiceContent = list.slice(0, item);
 
   return (
     <>
@@ -62,4 +62,4 @@ const ServiceThree = ({ column, item }) => {
     </>
   );
 };
-export default ServiceThree;
+export default ServicesList;

@@ -2,13 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import LandingPage from "./Pages/LandingPage";
 import About from "./Pages/About";
+import Services from "./Pages/Services";
 import "./index.scss";
 
 const App = () => (
-  <>
+  <div className="active-dark">
     <LandingPage />
     <About />
-  </>
+    <Services />
+  </div>
 );
 
 ReactDOM.render(

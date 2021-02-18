@@ -1,4 +1,5 @@
 import React from "react";
+import AboutTabs from "../Components/AboutTabs";
 
 const About = () => {
   const title = "About Me";
@@ -14,7 +15,6 @@ const About = () => {
               <div className="row row--35 align-items-center">
                 <div className="col-lg-5">
                   <div className="thumbnail">
-                    {/* <img className="w-100" src={require("../Assets/images/about/about-8.jpg").default} alt="About Images" /> */}
                     <img className="w-100" src={require("../Assets/images/about/about-4.jpg").default} alt="About Images" />
                   </div>
                 </div>
@@ -25,7 +25,7 @@ const About = () => {
                       <p className="description">{description}</p>
                     </div>
                     <div className="row mt--30">
-                      {/* <TabTwo tabStyle="tab-style--1" /> */}
+                      <AboutTabs tabStyle="tab-style--1" />
                     </div>
                   </div>
                 </div>
