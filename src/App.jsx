@@ -1,6 +1,5 @@
 import React from "react";
 // import { Route, Switch } from "react-router-dom";
-import { Typography } from "@material-ui/core";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";

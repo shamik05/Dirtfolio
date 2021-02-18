@@ -250,7 +250,7 @@
 // Flexbox "Flex" (shorthand)
 @mixin flex($fg: 1, $fs: null, $fb: null) {
 	$fg-boxflex: $fg;
-	@if type-of($fg) == 'list' {
+	@if type-of($fg) == "list" {
 		$fg-boxflex: nth($fg, 1);
 	}
 	-webkit-box-flex: $fg-boxflex;
@@ -292,11 +292,11 @@
 // Flexbox Align Items
 //
 // Flex items can be aligned in the cross axis of the current line of the
-// flex container, similar to 'justify-content' but in the perpendicular
-// direction. 'align-items' sets the default alignment for all of the flex
-// container's items, including anonymous flex items. 'align-self' allows
+// flex container, similar to "justify-content" but in the perpendicular
+// direction. "align-items" sets the default alignment for all of the flex
+// container"s items, including anonymous flex items. "align-self" allows
 // this default alignment to be overridden for individual flex items. (For
-// anonymous flex items, 'align-self' always matches the value of 'align-items'
+// anonymous flex items, "align-self" always matches the value of "align-items"
 // on their associated flex container.) 
 //
 // Values: flex-start | flex-end | center | baseline | stretch
@@ -346,9 +346,9 @@
 
 // Flexbox Align Content
 //
-// The 'align-content' property aligns a flex container's lines within the
+// The "align-content" property aligns a flex container"s lines within the
 // flex container when there is extra space in the cross-axis, similar to
-// how 'justify-content' aligns individual items within the main-axis. Note,
+// how "justify-content" aligns individual items within the main-axis. Note,
 // this property has no effect when the flexbox has only a single line.
 //
 // Values: flex-start | flex-end | center | space-between | space-around | stretch

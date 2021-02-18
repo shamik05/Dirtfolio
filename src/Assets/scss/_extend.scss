@@ -361,7 +361,7 @@ p:last-child {
 .bg-theme-gradient {
   background: #f81f01;
   background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f81f01', endColorstr='#ee076e',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f81f01", endColorstr="#ee076e",GradientType=1 );
 }
 
 %theme-gradient {
