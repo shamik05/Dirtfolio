@@ -23,3 +23,4 @@ export default reportWebVitals;
 //     "@material-ui/core": "^5.0.0-alpha.25",
 //     "@material-ui/icons": "^4.11.2",
 //     "@material-ui/system": "^4.11.3",
+// "bootstrap": "^5.0.0-beta2",

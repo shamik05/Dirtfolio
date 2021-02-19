@@ -1,15 +1,24 @@
+/* eslint-disable */
 import React from "react";
 import ReactDOM from "react-dom";
 import LandingPage from "./Pages/LandingPage";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import Projects from "./Pages/Projects";
+import Footer from "./Components/Footer";
+import ScrollTop from "./Components/ScrollTop";
+import Header from "./Components/Header";
 import "./index.scss";
 
 const App = () => (
   <div className="active-dark">
+    <Header />
     <LandingPage />
     <About />
     <Services />
+    <Projects />
+    <Footer />
+    <ScrollTop />
   </div>
 );
 
