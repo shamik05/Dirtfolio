@@ -6,7 +6,7 @@ const Projects = () => (
     { /* Start Portfolio Area */ }
     <div id="portfolio" className="fix">
       <div className="portfolio-area ptb--120 bg_color--1">
-        <div className="portfolio-sacousel-inner">
+        <div className="portfolio-carousel-inner">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

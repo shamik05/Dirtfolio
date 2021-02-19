@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import ReactDOM from "react-dom";
 import LandingPage from "./Pages/LandingPage";
@@ -12,7 +11,7 @@ import "./index.scss";
 
 const App = () => (
   <div className="active-dark">
-    <Header />
+    <Header homeLink="/" logo="symbol-dark" color="color-black" />
     <LandingPage />
     <About />
     <Services />

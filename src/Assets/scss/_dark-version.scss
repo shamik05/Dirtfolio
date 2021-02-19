@@ -77,7 +77,7 @@
   ul.tab-style--1 li {
       color: #ffffff; 
   }
-  .portfolio-sacousel-inner .slick-dots li button::after,
+  .portfolio-carousel-inner .slick-dots li button::after,
   .rn-slick-dot .slick-dots li button::after {
       background: #ffffff;
       box-shadow: inset 0 0 0 5px #ffffff;
@@ -126,7 +126,7 @@
   }
 
   @media #{$md-layout} {
-      .header-style-two .humberger-menu span.text-white {
+      .header-style-two .hamburger-menu span.text-white {
           color: #c6c9d8 !important;
       }
       .header-area .header-wrapper .mainmenunav ul.mainmenu {
@@ -135,7 +135,7 @@
       .header-area .header-wrapper.menu-open .close-menu span {
           color: #c6c9d8 !important;
       }
-      .header-area.header--fixed.sticky .humberger-menu span.text-white {
+      .header-area.header--fixed.sticky .hamburger-menu span.text-white {
           color: #c6c9d8 !important;
       }
       .header-area .header-wrapper .mainmenunav ul.mainmenu li a  {
@@ -149,7 +149,7 @@
       }
   }
   @media #{$sm-layout} {
-      .header-style-two .humberger-menu span.text-white {
+      .header-style-two .hamburger-menu span.text-white {
           color: #c6c9d8 !important;
       }
       .header-area .header-wrapper .mainmenunav ul.mainmenu {
@@ -158,7 +158,7 @@
       .header-area .header-wrapper.menu-open .close-menu span {
           color: #c6c9d8 !important;
       }
-      .header-area.header--fixed.sticky .humberger-menu span.text-white {
+      .header-area.header--fixed.sticky .hamburger-menu span.text-white {
           color: #c6c9d8 !important;
       }
       .service.service__style--2 .content p {

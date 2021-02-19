@@ -13,11 +13,6 @@ const SocialShare = [
   { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
 const Header = (props) => {
-  // this.menuTrigger = this.menuTrigger.bind(this);
-  // this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-  // this.stickyHeader = this.stickyHeader.bind(this);
-
-  //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
   window.addEventListener("load", () => {
     console.log("All assets are loaded");
   });
@@ -26,7 +21,7 @@ const Header = (props) => {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
   };
 
-  const CLoseMenuTrigger = () => {
+  const CloseMenuTrigger = () => {
     document.querySelector(".header-wrapper").classList.remove("menu-open");
   };
 
@@ -71,7 +66,7 @@ const Header = (props) => {
       <div className="header-wrapper">
         <div className="header-left d-flex align-items-center">
           <div className="logo">
-            <a href={this.props.homeLink}>
+            <a href={props.homeLink}>
               {logoUrl}
             </a>
           </div>
@@ -99,13 +94,13 @@ const Header = (props) => {
               <span>buy now</span>
             </a>
           </div>
-          {/* Start Humberger Menu  */}
-          <div className="humberger-menu d-block d-lg-none pl--20">
-            <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>
+          {/* Start Hamburger Menu  */}
+          <div className="hamburger-menu d-block d-lg-none pl--20">
+            <span onClick={menuTrigger} className="menutrigger text-white"><FiMenu /></span>
           </div>
-          {/* End Humberger Menu  */}
+          {/* End Hamburger Menu  */}
           <div className="close-menu d-block d-lg-none">
-            <span onClick={this.CLoseMenuTrigger} className="closeTrigger"><FiX /></span>
+            <span onClick={CloseMenuTrigger} className="closeTrigger"><FiX /></span>
           </div>
         </div>
       </div>

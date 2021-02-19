@@ -5,9 +5,9 @@ const SlideList = [
   {
     textPosition: "text-left",
     category: "Welcome to my World",
-    description: "",
-    buttonText: "",
-    buttonLink: "",
+    description: "description",
+    buttonText: "buttonText",
+    buttonLink: "buttonLink",
   },
 ];
 
@@ -29,8 +29,8 @@ const LandingPage = () => (
                       <br />
                       <TextLoop>
                         <span> Full-Stack Developer.</span>
+                        <span> Javascript Programmer</span>
                         <span> Learner</span>
-                        <span> Content Writter.</span>
                       </TextLoop>
                       {" "}
                     </h1>
