@@ -53,12 +53,6 @@ font-family: "Poppins", sans-serif;
     }
 }
 
-@for $i from 1 through 80 {
-    .font--#{$i}{
-        font-size: #{$i}px !important;
-    }
-}
-
 p {
     font-size: 18px;
     line-height: 30px;
@@ -132,26 +126,18 @@ Custom Row
 	Overlay styles 
 ==============================*/
 
-[data-overlay],
-[data-black-overlay],
-[data-white-overlay] {
+[data-black-overlay] {
     position: relative;
     z-index: 1;
 }
 
-[data-overlay]>div,
-[data-overlay]>*,
 [data-black-overlay]>div,
-[data-black-overlay]>*,
-[data-white-overlay]>div,
-[data-white-overlay]>* {
+[data-black-overlay]>* {
     position: relative;
     z-index: 1;
 }
 
-[data-overlay]:before,
-[data-black-overlay]:before,
-[data-white-overlay]:before {
+[data-black-overlay]:before {
     content: "";
     position: absolute;
     left: 0;
@@ -161,22 +147,12 @@ Custom Row
     z-index: -1;
 }
 
-[data-overlay]:before {
-    background-color: $theme-color;
-}
-
 [data-black-overlay]:before {
     background-color: #00010c;
 }
 
-[data-white-overlay]:before {
-    background-color: #b4abab;
-}
-
 @for $i from 1 through 10 {
-    [data-overlay="#{$i}"]:before,
-    [data-black-overlay="#{$i}"]:before,
-    [data-white-overlay="#{$i}"]:before {
+    [data-black-overlay="#{$i}"]:before {
         opacity: #{$i * 0.10};
     }
 }

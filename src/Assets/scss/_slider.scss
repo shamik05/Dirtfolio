@@ -445,29 +445,6 @@ Personal Portfolio
   }
 }
 
-.slide {
-  &.slide-style-2{
-      &.slider-video-bg{
-          .inner{
-              .title {
-                  font-size: 60px;
-                  line-height: 80px;
-                  margin-bottom: 20px;
-                  @media #{$sm-layout} {
-                      font-size: 44px;
-                      line-height: 60px;
-                      margin-bottom: 13px;
-                  }
-                  @media #{$large-mobile} {
-                      font-size: 36px;
-                      line-height: 53px;
-                  }
-              }
-          }
-      }
-  }
-}
-
 /*-------------------------
 For Slider Service 
 ---------------------------*/

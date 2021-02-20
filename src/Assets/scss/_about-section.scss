@@ -35,7 +35,8 @@ ul{
               position: absolute;
               content: "";
               width: 30px;
-              background: rgba(0, 0, 0, 0.2);
+            //   background: rgba(0, 0, 0, 0.2);
+                background: rgba(198, 201, 216, 0.75);
               transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
               height: 2px;
               bottom: 0;
@@ -53,26 +54,8 @@ ul{
   
 }
 
-.single-tab-content {
-  padding-top: 20px;
-  p {
-      font-weight: 300;
-      color: #717173;
-      font-size: 18px;
-      line-height: 30px;
-  }
-}
-
 .single-tab-content{
   ul{
-      &.list-style--1{
-          li{
-              margin-bottom: 10px;
-          }
-      }
-      padding: 0;
-      margin: 0;
-      list-style: none;
       li{
           color: #7e7e7e;
           font-size: 16px;

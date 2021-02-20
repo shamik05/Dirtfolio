@@ -74,103 +74,14 @@
   transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
 
-%verticalCenter {
-  @extend %posabsolute;
-  top: 50%;
-  @include transform(translateY(-50%));
-  z-index: 2;
-}
-%positionFull {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-%width100 {
-  width: 100%;
-}
-
-%height100 {
-  height: 100%;
-}
-
-
-%overflowHidden {
-  overflow: hidden;
-}
-
-%cursorPointer {
-  cursor: pointer;
-}
-
 %font {
   font-family: $body-font;
-}
-
-%headingFont {
-  font-family: $heading-font;
-}
-
-// Text Align
-
-%textLeft {
-  text-align: left;
-}
-
-%textRight {
-  text-align: right;
-}
-
-%textCenter {
-  text-align: center;
 }
 
 // Flexbox Extend
 
 %flexbox {
   @include flexbox;
-}
-
-%justify-center {
-  @include justify-content(center);
-}
-
-%justify-around {
-  @include justify-content(space-around);
-}
-
-%justify-between {
-  @include justify-content(space-between);
-}
-
-%justify-start {
-  @include justify-content(flex-start);
-}
-
-%justify-end {
-  @include justify-content(flex-end);
-}
-
-%align-start {
-  @include align-items(flex-start);
-}
-
-%align-end {
-  @include align-items(flex-end);
-}
-
-%align-center {
-  @include align-items(center);
-}
-
-%align-stretch {
-  @include align-items(stretch);
-}
-
-%align-baseline {
-  @include align-items(baseline);
 }
 
 %flex-wrap {
@@ -181,51 +92,7 @@
   @include flex-wrap(nowrap);
 }
 
-%flex-column {
-  @include flex-direction(column);
-}
-
-%flex-column-reverse {
-  @include flex-direction(column-reverse);
-}
-
-%flex-row {
-  @include flex-direction(row);
-}
-
-%flex-row-reverse {
-  @include flex-direction(row-reverse);
-}
-
-%absFlexCenter {
-  @include flexbox;
-  @include justify-content(center);
-  @include align-items(center);
-}
-
-%horizontalFlexCenter {
-  @include flexbox;
-  @include justify-content(center);
-}
-
-%verticalFlexCenter {
-  @include flexbox;
-  @include align-items(center);
-}
-
 // Bootstrap
-%posabsolute {
-  position: absolute;
-}
-
-%posrelative {
-  position: relative;
-}
-
-%inlineBlock {
-  display: inline-block;
-}
-
 %block {
   display: block;
 }
@@ -239,10 +106,4 @@ p:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-
-%gradientDefault {
-  background: linear-gradient(to right, #f81f01 50%, #ee076e 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

@@ -1,13 +1,12 @@
 /*==========================
     Service Area 
 ===========================*/
-
 .service{
   // Service Style One
   &.service__style--1 {
       padding: 40px 0;
       @extend %transition;
-      @extend %posrelative;
+      position: relative;
       z-index: 2;
       @media #{$sm-layout} {
           padding: 15px 0;
@@ -55,7 +54,7 @@
   &.service__style--2 {
       padding: 30px 35px;
       @extend %transition;
-      @extend %posrelative;
+      position: relative;
       z-index: 2;
       border-radius: 10px;
       @media #{$laptop-device} {
@@ -174,39 +173,6 @@
       }
   }
   
-}
-
-/* ---------------------------
-  Standard Service  
--------------------------------*/
-.standard-service {
-  .thumbnai {
-      img {
-          border-radius: 5px;
-      }
-  }
-  .content{
-      h3 {
-          font-size: 19px;
-          margin-top: 30px;
-          margin-bottom: 10px;
-          font-weight: 600;
-          a {
-              @extend %transition;
-              color: $heading-color;
-              &:hover {
-                  color: $theme-color;
-              }
-          }
-      }
-      p {
-          font-size: 15px;
-          line-height: 24px;
-      }
-      a {
-
-      }
-  }
 }
 
 .text-center ,

@@ -63,20 +63,9 @@
       backface-visibility: hidden;
       transition: transform .28s ease;
       z-index: 4;
-      &.image-1{
-          background-image: url("../images/portfolio/portfolio-1.jpg");
-      }
-
-      &.image-2{
-          background-image: url("../images/portfolio/portfolio-2.jpg");
-      }
 
       &.image-3{
           background-image: url("../images/portfolio/portfolio-3.jpg");
-      }
-
-      &.image-4 {
-          background-image: url("../images/portfolio/portfolio-4.jpg");
       }
 
       &::after{
@@ -110,17 +99,8 @@
       opacity: 0;
       z-index: 1;
 
-      &.image-1{
-          background-image: url("../images/portfolio/portfolio-1.jpg");
-      }
-      &.image-2{
-          background-image: url("../images/portfolio/portfolio-2.jpg");
-      }
       &.image-3{
           background-image: url("../images/portfolio/portfolio-3.jpg");
-      }
-      &.image-4 {
-          background-image: url("../images/portfolio/portfolio-4.jpg");
       }
   }
 
@@ -172,62 +152,6 @@
                       }
                   }
               }
-          }
-      }
-  }
-
-  &.portfolio-interior-design {
-      .thumbnail {
-          &.image-1{
-              background-image: url("../images/portfolio/interior/portfolio-1.jpg");
-          }
-  
-          &.image-2{
-              background-image: url("../images/portfolio/interior/portfolio-2.jpg");
-          }
-  
-          &.image-3{
-              background-image: url("../images/portfolio/interior/portfolio-3.jpg");
-          }
-  
-          &.image-4 {
-              background-image: url("../images/portfolio/interior/portfolio-4.jpg");
-          }
-          &.image-5 {
-              background-image: url("../images/portfolio/interior/portfolio-5.jpg");
-          }
-          &.image-6 {
-              background-image: url("../images/portfolio/interior/portfolio-6.jpg");
-          }
-          &.image-7 {
-              background-image: url("../images/portfolio/interior/portfolio-7.jpg");
-          }
-      }
-      .bg-blr-image{
-          background-image: url("../images/portfolio/interior/portfolio-1.jpg");
-          &.image-1{
-              background-image: url("../images/portfolio/interior/portfolio-1.jpg");
-          }
-  
-          &.image-2{
-              background-image: url("../images/portfolio/interior/portfolio-2.jpg");
-          }
-  
-          &.image-3{
-              background-image: url("../images/portfolio/interior/portfolio-3.jpg");
-          }
-  
-          &.image-4 {
-              background-image: url("../images/portfolio/interior/portfolio-4.jpg");
-          }
-          &.image-5 {
-              background-image: url("../images/portfolio/interior/portfolio-5.jpg");
-          }
-          &.image-6 {
-              background-image: url("../images/portfolio/interior/portfolio-6.jpg");
-          }
-          &.image-7 {
-              background-image: url("../images/portfolio/interior/portfolio-7.jpg");
           }
       }
   }
