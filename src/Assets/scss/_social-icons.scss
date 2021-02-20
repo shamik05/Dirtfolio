@@ -28,20 +28,6 @@ ul {
               }
           }
       }
-      &.color-theme{
-          li {
-              a {
-                  border-color: $theme-color;
-                  color: $theme-color;
-                  &:hover {
-                      background: $theme-color;
-                      border-color: $theme-color;
-                      color: #ffffff;
-                  }
-              }
-
-          }
-      }
       &.rn-lg-size {
           margin-top: 0 !important;
           li {
@@ -69,17 +55,6 @@ ul {
                       box-shadow: none;
 
                   }
-              }
-          }
-          &.color-theme{
-              li {
-                  a {
-                      color: $theme-color;
-                      &:hover {
-                          color: currentColor;
-                      }
-                  }
-
               }
           }
           &.color-black{

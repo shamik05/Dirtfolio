@@ -1,66 +1,6 @@
 /*=========================
     Section Separation 
 ==========================*/
-
-.letterspacing--2 {
-  letter-spacing: 2px;
-}
-.pra{
-  font-size: 18px;
-  line-height: 2em;
-  
-  @media #{$sm-layout} {
-      font-size: 14px;
-      line-height: 24px;
-  }
-}
-.plr--120 {
-  @media #{$md-layout} {
-      padding: 0 60px !important;
-  }
-  @media #{$sm-layout} {
-      padding: 0 30px !important;
-  }
-}
-.plr--120{
-  @media #{$md-layout} {
-      padding: 0 60px !important;
-  }
-  @media #{$lg-layout} {
-      padding: 0 60px !important;
-  }
-  @media #{$sm-layout} {
-      padding: 0 30px !important;
-  }
-}
-
-
-
-.pl--0 {
-  padding-left: 0 !important;
-}
-.pr--0 {
-  padding-right: 0 !important;
-}
-.pt--0 {
-  padding-top: 0 !important;
-}
-.pb--0 {
-  padding-bottom: 0 !important;
-}
-.mr--0 {
-  margin-right: 0 !important;
-}
-.ml--0 {
-  margin-left: 0 !important;
-}
-.mt--0 {
-  margin-top: 0 !important;
-}
-.mb--0 {
-  margin-bottom: 0 !important;
-}
-
 .pt--260{
   padding-top: 260px;
 }

@@ -91,32 +91,6 @@ Mainmenu Area
   }
 }
 
-.color-white{
-  .mainmenunav {
-      ul {
-          &.mainmenu {
-              @extend %liststyle;
-              > li {
-                  > a {
-                      color: #ffffff;
-                  }
-                  &:hover {
-                      > a {
-                          color: rgba(255,255,255,0.6);
-                          @media #{$md-layout} {
-                              color: $theme-color;
-                          }
-                          @media #{$sm-layout} {
-                              color: $theme-color;
-                          }
-                      }
-                  }
-              }
-          }
-      }
-  }
-}
-
 .color-black{
   .mainmenunav {
       ul {
@@ -136,7 +110,6 @@ Mainmenu Area
       }
   }
 }
-
 
 @media #{$lg-layout}{
   .header-style-two .hamburger-menu span.text-white {

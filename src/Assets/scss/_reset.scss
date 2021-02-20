@@ -6,7 +6,6 @@
 article,
 aside,
 details,
-figcaption,
 figure,
 footer,
 header,
@@ -28,10 +27,7 @@ audio:not([controls]) {
   display: none;
 }
 html,
-button,
-input,
-select,
-textarea {
+button {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 a {
@@ -203,98 +199,33 @@ legend {
   padding: 0;
   white-space: normal;
 }
-button,
-input,
-select,
-textarea {
+button {
   font-size: 100%;
   margin: 0;
   max-width: 100%;
   vertical-align: baseline;
 }
 
-button,
-input {
+button {
   line-height: normal;
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
   cursor: pointer;
 }
 
-button[disabled],
-input[disabled] {
+button[disabled] {
   cursor: default;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-  appearance: textfield;
-  padding-right: 2px;
-  width: 270px;
-}
-
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-table {
-  border-bottom: 1px solid #ededed;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font-size: 14px;
-  line-height: 2;
-  margin: 0 0 20px;
-  width: 100%;
-}
-caption,
-th,
-td {
-  font-weight: normal;
-  text-align: left;
-}
-caption {
-  font-size: 16px;
-  margin: 20px 0;
-}
-th {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-td {
-  border-top: 1px solid #ededed;
-  padding: 6px 10px 6px 0;
-}
-del {
-  color: #333;
-}
-ins {
-  background: #fff9c0;
-  text-decoration: none;
-}
+
 hr {
   background-size: 4px 4px;
   border: 0;
