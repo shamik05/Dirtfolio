@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn,
-} from "react-icons/fa";
-
-const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
-];
+import SocialShare from "../Constants/SocialShare";
 
 const Footer = () => (
   <div className="footer-style-2 ptb--30 bg_image bg_image--1" data-black-overlay="6">
@@ -18,8 +9,7 @@ const Footer = () => (
           <div className="inner">
             <div className="logo text-center text-sm-left mb_sm--20">
               <a href="/home-one">
-                {/* <img src="/assets/images/logo/logo.png" alt="Logo images" /> */}
-                <img src={require("../Assets/images/logo/logo.png").default} alt="Logo images" />
+                {/* <img src={require("../Assets/images/logo/logo.png").default} alt="Logo images" /> */}
               </a>
             </div>
           </div>
@@ -27,8 +17,8 @@ const Footer = () => (
         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
           <div className="inner text-center">
             <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
-              {SocialShare.map((val) => (
-                <li key={val.link}><a href={`${val.link}`}>{val.Social}</a></li>
+              {SocialShare.map(({ key, link, Social }) => (
+                <li key={key}><a href={link}>{Social}</a></li>
               ))}
             </ul>
           </div>
@@ -36,7 +26,7 @@ const Footer = () => (
         <div className="col-lg-4 col-md-12 col-sm-12 col-12">
           <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
             <div className="text">
-              <p>Copyright © 2020 Rainbow-Themes. All Rights Reserved.</p>
+              <p>Copyright © 2021 Shamik Haldar.</p>
             </div>
           </div>
         </div>

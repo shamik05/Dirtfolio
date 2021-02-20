@@ -1,58 +1,41 @@
-/* eslint-disable react/destructuring-assignment */
+/* eslint-disable */
 /* eslint-disable react/prop-types */
 import React from "react";
-
-const PortfolioListContent = [
-  {
-    image: "image-1",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-2",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: "Getting tickets to the big show",
-  },
-];
+import { GoRepoForked } from "react-icons/go";
+import { MdOpenInNew } from "react-icons/md";
+import ProjectList from "../Constants/ProjectList";
+import "./ProjectCard.scss";
 
 const ProjectCard = (props) => {
-  const { column, styevariation } = props;
-  const list = PortfolioListContent.slice(0, props.item);
+  const { column, stylevariation } = props;
+
   return (
     <>
-      {list.map((value) => (
-        <div className={`${column}`} key={value}>
-          <div className={`portfolio ${styevariation}`}>
+      {ProjectList.map(({
+        name, id, description, repo, depo,
+      }) => (
+        <div className={`${column}`} key={id}>
+          <div className={`portfolio ${stylevariation}`}>
+          {/* <div className="ribbon ribbon-top-left"><span>ribbon</span></div> */}
+          {/* <div class="corner-ribbon top-left sticky red shadow">Hello</div> */}
             <div className="thumbnail-inner">
-              <div className={`thumbnail ${value.image}`} />
-              <div className={`bg-blr-image ${value.image}`} />
+              <div className={`thumbnail ${"image-3"}`} />
+              {/* <div className={`bg-blr-image ${"image-3"}`} /> */}
             </div>
             <div className="content">
               <div className="inner">
-                <p>{value.category}</p>
-                <h4><a href="/portfolio-details">{value.title}</a></h4>
+                
+                <p>{description}</p>
+                <h4><a href="/portfolio-details">{name}</a></h4>
                 <div className="portfolio-button">
-                  <a className="rn-btn" href="/portfolio-details">View Details</a>
+                  <a className="rn-btn" href={depo}>
+                    <GoRepoForked />
+                    Read More
+                  </a>
+                  <a className="rn-btn" href={repo}>
+                    <MdOpenInNew />
+                    Visit Website
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-const repos = [
+const projectsList = [
   {
     name: "Balls of War",
     id: "bow",
@@ -49,4 +49,4 @@ const repos = [
   },
 ];
 
-export default repos;
+export default projectsList;

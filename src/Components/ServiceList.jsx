@@ -27,12 +27,12 @@ const list = [
   },
   {
     icon: <FiUsers />,
-    title: "Marketing & Reporting",
+    title: "Marketing",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
     icon: <FiMonitor />,
-    title: "Mobile App Development",
+    title: "Mobile",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
 ];
@@ -44,7 +44,7 @@ const ServicesList = ({ column, item }) => {
     <>
       <div className="row">
         {ServiceContent.map((val) => (
-          <div className={`${column}`} key={val}>
+          <div className={`${column}`} key={val.title}>
             <a href="/service-details">
               <div className="service service__style--2">
                 <div className="icon">

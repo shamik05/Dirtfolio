@@ -5,8 +5,7 @@ import {
 } from "react-tabs";
 
 const AboutTabs = ({ tabStyle }) => {
-  const
-    tab1 = "Main skills";
+  const tab1 = "Main skills";
   const tab2 = "Awards";
   const tab3 = "Experience";
   const tab4 = "Education & Certification";

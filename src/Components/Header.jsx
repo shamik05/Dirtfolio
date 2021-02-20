@@ -1,17 +1,9 @@
 /* eslint-disable */
 import React from "react";
-import {
-  FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn,
-} from "react-icons/fa";
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
+import SocialShare from "../Constants/SocialShare";
 
-const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
-];
 const Header = (props) => {
   window.addEventListener("load", () => {
     console.log("All assets are loaded");
@@ -23,10 +15,6 @@ const Header = (props) => {
 
   const CloseMenuTrigger = () => {
     document.querySelector(".header-wrapper").classList.remove("menu-open");
-  };
-
-  const stickyHeader = () => {
-
   };
 
   window.addEventListener("scroll", () => {
@@ -67,31 +55,29 @@ const Header = (props) => {
         <div className="header-left d-flex align-items-center">
           <div className="logo">
             <a href={props.homeLink}>
-              {logoUrl}
+              {/* {logoUrl} */}
             </a>
           </div>
           <nav className="mainmenunav d-lg-block ml--50">
-            <Scrollspy className="mainmenu" items={["home", "about", "service", "portfolio", "blog", "contact"]} currentClassName="is-current" offset={-200}>
+            <Scrollspy className="mainmenu" items={["home", "about", "skills", "projects"]} currentClassName="is-current" offset={-200}>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#service">Service</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
             </Scrollspy>
           </nav>
         </div>
         <div className="header-right">
           <div className="social-share-inner">
             <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
-              {SocialShare.map((val, i) => (
-                <li key={i}><a href={`${val.link}`}>{val.Social}</a></li>
+              {SocialShare.map(({ key, link, Social }) => (
+                <li key={key}><a href={`${link}`}>{Social}</a></li>
               ))}
             </ul>
           </div>
           <div className="header-btn">
-            <a className="rn-btn" href="https://themeforest.net/checkout/from_item/25457315?license=regular">
-              <span>buy now</span>
+            <a className="rn-btn" href="">
+              <span>HIRE ME</span>
             </a>
           </div>
           {/* Start Hamburger Menu  */}
