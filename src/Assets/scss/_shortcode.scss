@@ -28,31 +28,6 @@ font-family: "Poppins", sans-serif;
     color: $theme-color;
 }
 
-/*===============================
-    Background Color 
-=================================*/
-
-@include config-bg-colors("bg_color--",
-"1"$white,
-"2"$theme-color,
-"3"#f8f9fc,
-"4"#1a1b1f,
-"5"#f8f9fc,
-"6"#000000,
-"7"#101010
-);
-
-.bg_image {
-    @extend %bgImagePosition;
-}
-
-@for $i from 1 through 32 {
-    .bg_image--#{$i} {
-        // background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
-        background-image: url("../images/bg/bg-image-#{$i}.jpg") !important;
-    }
-}
-
 p {
     font-size: 18px;
     line-height: 30px;

@@ -3,7 +3,9 @@
 ----------------------------*/
 
 .active-dark {
-  background: #101010;
+//   background: #101010;
+//   background-image: url("../../undraw_about_me_wa29.svg");
+//   background-size: contain;
   [data-black-overlay="6"]:before {
       display: none;
   }
@@ -11,17 +13,17 @@
       display: none;
   }
 
-  .bg_image--1 ,
-  .footer-right  {
-      background-image: inherit !important;
-  }
-  .bg_color--1 {
-      background: #191919;
-  }
-  .bg_color--5,
-  .footer-right {
-      background: #101010;
-  }
+//   .bg_image--1 ,
+//   .footer-right  {
+//       background-image: inherit !important;
+//   }
+//   .bg_color--1 {
+//       background: #191919;
+//   }
+//   .bg_color--5,
+//   .footer-right {
+//       background: #101010;
+//   }
 
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       color: #ffffff;
@@ -41,8 +43,7 @@
   .service.service__style--2:hover .content p,
   .section-title p a ,
   .slide.slider-style-3 .inner h1.title ,
-  .color-black .mainmenunav ul.mainmenu>li>a ,
-  ul.social-share.social-style--2.color-black li a ,
+  .color-black .mainmenunav ul.mainmenu>li>a,
   .header-area.color-black a.rn-btn ,
   ul.tab-style--1 li {
       color: #ffffff; 

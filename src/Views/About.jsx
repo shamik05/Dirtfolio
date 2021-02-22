@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import AboutTabs from "../Components/AboutTabs";
 
@@ -9,13 +10,15 @@ const About = () => {
     <>
       {/* Start About Area */}
       <div id="about" className="fix">
-        <div className="about-area ptb--120  bg_color--1">
+        {/* <div className="about-area ptb--120  bg_color--1"> */}
+        <div className="about-area ptb--120">
           <div className="about-wrapper">
             <div className="container">
               <div className="row row--35 align-items-center">
                 <div className="col-lg-5">
                   <div className="thumbnail">
                     <img className="w-100" src={require("../Assets/images/about/about-4.jpg").default} alt="About Images" />
+                    {/* <img src={require("../undraw_about_me_wa29.svg").default} alt="About Me Image" /> */}
                   </div>
                 </div>
                 <div className="col-lg-7">
@@ -25,7 +28,8 @@ const About = () => {
                       <p className="description">{description}</p>
                     </div>
                     <div className="row mt--30">
-                      <AboutTabs tabStyle="tab-style--1" />
+                      {/* <AboutTabs tabStyle="tab-style--1" /> */}
+                      {/* <img src={require("../undraw_about_me_wa29.svg").default} alt="About Me Image" /> */}
                     </div>
                   </div>
                 </div>

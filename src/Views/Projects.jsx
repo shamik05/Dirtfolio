@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "../Components/ProjectCard";
+import ProjectCard from "../Components/Projects/ProjectCard";
 
 const Projects = () => (
   <>
@@ -12,7 +12,7 @@ const Projects = () => (
               <div className="col-lg-12">
                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
                   <h2 className="title">Projects</h2>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                  {/* <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p> */}
                 </div>
               </div>
             </div>

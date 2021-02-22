@@ -1,10 +1,27 @@
-/* eslint-disable */
 import React from "react";
+import { FaHtml5 } from "react-icons/fa";
 import {
   FiCast, FiLayers, FiUsers, FiMonitor,
 } from "react-icons/fi";
+import SQL from "../Assets/Icons/sql.svg";
 
-const list = [
+export const Languages = [
+  {
+    icon: <FaHtml5 />,
+    title: "HTML5",
+    description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+  },
+];
+
+export const Frameworks = [
+  {
+    icon: <SQL />,
+    title: "SQL",
+    description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+  },
+];
+
+export const Libraries = [
   {
     icon: <FiCast />,
     title: "Business Stratagy",
@@ -37,28 +54,6 @@ const list = [
   },
 ];
 
-const ServicesList = ({ column }) => {
+export const Others = [
 
-  return (
-    <>
-      <div className="row">
-        {list.map((val) => (
-          <div className={`${column}`} key={val.title}>
-            <a href="/service-details">
-              <div className="service service__style--2">
-                <div className="icon">
-                  {val.icon}
-                </div>
-                <div className="content">
-                  <h3 className="title">{val.title}</h3>
-                  <p>{val.description}</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        ))}
-      </div>
-    </>
-  );
-};
-export default ServicesList;
+];

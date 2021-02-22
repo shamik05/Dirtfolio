@@ -6,15 +6,6 @@
 	}
 }
 
-@mixin config-bg-colors($prefix, $bg_color...) {
-	@each $i in $bg_color {
-		.#{$prefix}#{nth($i, 1)} {
-			background: nth($i, 2);
-		}
-	}
-}
-
-
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content;

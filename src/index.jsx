@@ -1,23 +1,29 @@
+/* eslint-disable */
 import React from "react";
 import ReactDOM from "react-dom";
-import LandingPage from "./Pages/LandingPage";
-import About from "./Pages/About";
-import Services from "./Pages/Services";
-import Projects from "./Pages/Projects";
+// import { Parallax } from "react-parallax";
+import LandingPage from "./Views/LandingPage";
+import About from "./Views/About";
+import Skills from "./Views/Skills";
+import Projects from "./Views/Projects";
 import Footer from "./Components/Footer";
 import ScrollTop from "./Components/ScrollTop";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
 import "./index.scss";
 
 const App = () => (
   <div className="active-dark">
     <Header homeLink="/" logo="symbol-dark" color="color-black" />
     <LandingPage />
-    <About />
-    <Services />
-    <Projects />
-    <Footer />
-    <ScrollTop />
+    {/* <Parallax bgImage={image1} bgImageAlt="Background Image" strength={500} > */}
+      <About />
+     
+      <Skills />
+      <Projects />
+      {/* </Parallax> */}
+      <Footer />
+      <ScrollTop />
+
   </div>
 );
 

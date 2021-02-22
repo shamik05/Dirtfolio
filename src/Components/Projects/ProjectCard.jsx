@@ -1,9 +1,8 @@
 /* eslint-disable */
-/* eslint-disable react/prop-types */
 import React from "react";
 import { GoRepoForked } from "react-icons/go";
 import { MdOpenInNew } from "react-icons/md";
-import ProjectList from "../Constants/ProjectList";
+import ProjectList from "../../Constants/ProjectList";
 import "./ProjectCard.scss";
 
 const ProjectCard = (props) => {

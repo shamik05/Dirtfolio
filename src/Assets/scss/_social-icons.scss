@@ -1,44 +1,48 @@
 /* Social icon Styles  */
 ul {
   &.social-share {
-      padding: 0;
-      margin: 0;
-      margin: -6px;
-      li {
-          margin: 6px;
-          a {
-              width: 40px;
-              display: inline-block;
-              height: 40px;
-              border: 2px solid rgba(198, 201, 216, 0.75);
-              line-height: 35px;
-              color: rgba(198, 201, 216, 0.75);
-              border-radius: 100%;
-              text-align: center;
-              font-size: 14px;
-              @extend %transition;
-          }
-          &:hover {
-              a {
-                  background: $theme-color;
-                  border-color: $theme-color;
-                  color: #ffffff;
-                  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-                  transform: translateY(-3px);
-              }
-          }
-      }
-      &.rn-lg-size {
-          margin-top: 0 !important;
-          li {
-              a {
-                  width: 50px;
-                  height: 50px;
-                  line-height: 44px;
-                  font-size: 16px;
-              }
-          }
-      }
+		padding: 0;
+		margin: 0;
+		margin: -6px;
+		li {
+			margin: 6px;
+			@media #{$sm-layout} {
+				margin: 0;
+			}
+			a {
+				width: 40px;
+				display: inline-block;
+				height: 40px;
+				border: 2px solid rgba(198, 201, 216, 0.75);
+				line-height: 35px;
+				//   color: rgba(198, 201, 216, 0.75);
+				color: #ffffff;
+				border-radius: 100%;
+				text-align: center;
+				font-size: 14px;
+				@extend %transition;
+			}
+			&:hover {
+				a {
+					background: $theme-color;
+					border-color: $theme-color;
+					color: #ffffff;
+					box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+					transform: translateY(-3px);
+				}
+			}
+		}
+		&.rn-lg-size {
+			margin-top: 0 !important;
+			li {
+				a {
+					width: 50px;
+					height: 50px;
+					line-height: 44px;
+					font-size: 16px;
+				}
+			}
+		}
       &.social-style--2 {
           li{
               a {
@@ -60,7 +64,7 @@ ul {
           &.color-black{
               li {
                   a {
-                      color: #1d1d24;
+                      color: #ffffff;
                       opacity: 0.8;
                       &:hover {
                           color: $theme-color;

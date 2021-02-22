@@ -1,26 +1,26 @@
 a ,
 button {
   &.rn-btn {
-      padding: 0 23px;
-      height: 40px;
-      display: inline-block;
-      line-height: 34px;
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    line-height: 34px;
+    border: 2px solid $theme-color;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    font-family: Montserrat;
+    color: $theme-color;
+    letter-spacing: 0.2px;
+    @extend %transition;
+    text-transform: uppercase;
+    &:hover {
       border: 2px solid $theme-color;
-      border-radius: 4px;
-      font-size: 14px;
-      position: relative;
-      z-index: 2;
-      // font-family: Montserrat;
-      color: $theme-color;
-      letter-spacing: 0.2px;
-      @extend %transition;
-      text-transform: uppercase;
-      &:hover {
-          border: 2px solid $theme-color;
-          transform: translateY(-3px);
-          color: #ffffff;
-          background: $theme-color;
-      }
+      transform: translateY(-3px);
+      color: #ffffff;
+      background: $theme-color;
+    }
   }
 }
 
