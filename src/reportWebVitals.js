@@ -24,3 +24,6 @@ export default reportWebVitals;
 //     "@material-ui/icons": "^4.11.2",
 //     "@material-ui/system": "^4.11.3",
 // "bootstrap": "^5.0.0-beta2",
+
+Libraries: React, React-Router, jQuery, Mongoose.js, Socket.IO, Passport.js, Inquirer.js, Moment.js, Chart.js
+Others: MySQL, MongoDB, Sequelize, AWS, Git version control, GitHub, Heroku, ESLint, Dynamics CRM

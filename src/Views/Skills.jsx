@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import ServiceList from "../Components/ServiceList";
-import {Languages} from "../Constants/Skillset";
+import ServiceList from "../Components/SkillCard";
+import {Languages, Frameworks, Libraries, Others } from "../Constants/Skillset";
 
 const Skills = () => (
   <>
@@ -28,20 +28,21 @@ const Skills = () => (
               <Tab>Libraries</Tab>
               <Tab>Others</Tab>
             </TabList>
+
             <TabPanel>
               <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Languages}/>
             </TabPanel>
 
             <TabPanel>
-              Frameworks
+              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Frameworks}/>
             </TabPanel>
             
             <TabPanel>
-              Libraries
+              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Libraries}/>
             </TabPanel>
 
             <TabPanel>
-              Others
+              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Others}/>
             </TabPanel>
           </Tabs>
             </div>

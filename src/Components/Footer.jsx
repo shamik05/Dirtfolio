@@ -27,6 +27,13 @@ const Footer = () => (
           <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
             <div className="text">
               <p>Copyright © 2021 Shamik Haldar.</p>
+              <div>
+                Icons made by
+                <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a>
+                {" "}
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              </div>
             </div>
           </div>
         </div>
