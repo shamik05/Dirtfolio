@@ -10,6 +10,7 @@ import { ReactComponent as Express } from "../Assets/Icons/express.svg";
 import { ReactComponent as Sequelize } from "../Assets/Icons/sequelize.svg";
 import { ReactComponent as Passport } from "../Assets/Icons/passport.svg";
 import { ReactComponent as Inquirer } from "../Assets/Icons/inquirer.svg";
+import { ReactComponent as Mongoose } from "../Assets/Icons/mongoose.svg";
 
 export const Languages = [
   {
@@ -18,7 +19,7 @@ export const Languages = [
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    icon: <><SQL stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" /> <GrMysql /> <Sequelize stroke="currentColor" fill="currentColor" height="1em" width="1em" /></>,
+    icon: <><SQL stroke="currentColor" fill="currentColor" strokeWidth="1" height="1em" width="1em" /> <GrMysql /> <Sequelize stroke="currentColor" fill="currentColor" height="1em" width="1em" /></>,
     title: "SQL",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
@@ -33,13 +34,12 @@ export const Languages = [
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    icon: <Handlebars stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" />,
+    icon: <Handlebars stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.1em" width="1.1em"/>,
     title: "Handlebars",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    // icon: <><DiMongodb /> <img src={require("../Assets/Icons/mongoose.png").default} width="100px" alt="Mongoosejs Logo" /> </>,
-    icon: <DiMongodb />,
+    icon: <><DiMongodb /> <Mongoose stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.1em" width="1.1em"/></>,
     title: "NoSQL",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   }
@@ -47,7 +47,7 @@ export const Languages = [
 
 export const Frameworks = [
   {
-    icon: <Express stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" />,
+    icon: <Express stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.2em" width="1.2em" />,
     title: "Express",
     description: "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
@@ -84,26 +84,26 @@ export const Libraries = [
     title: "Socket.IO"
   },
   {
-    icon: <Passport stroke-width="0" height="1em" width="1em" />,
+    icon: <Passport strokeWidth="1" height="1em" width="1em" />,
     title: "Passport.js",
   },
-  // {
-  //   icon: <Inquirer stroke-width="0" height="1em" width="1em" />,
-  //   title: "Inquirer.js",
-  // }
+  {
+    icon: <Inquirer fill="currentColor" />,
+    title: "Inquirer.js",
+  }
 ];
 
 export const Others = [
   {
-    icon: <><DiGit stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" /> <SiGithub stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" /></>,
+    icon: <><DiGit /> <SiGithub /></>,
     title: "Git",
   },
   {
-    icon: <SiStrapi stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" />,
+    icon: <SiStrapi />,
     title: "Strapi"
   },
   {
-    icon: <SiHeroku stroke="currentColor" fill="currentColor" stroke-width="0" height="1em" width="1em" />,
+    icon: <SiHeroku />,
     title: "Heroku",
   },
   {
