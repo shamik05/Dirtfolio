@@ -1,0 +1,47 @@
+.skills-tabs {
+  @extend %liststyle;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  li {
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    padding-bottom: 4px;
+    font-size: 30px;
+    font-weight: 500;
+    outline: none;
+    color: white;
+    cursor: pointer;
+
+    @media #{$lg-layout} {
+      margin: 0 10px;
+      font-size: 29px;
+    }
+
+    @media #{$sm-layout} {
+      margin-bottom: 10px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      background: rgba(198, 201, 216, 0.75);
+      transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+      height: 2px;
+      bottom: 0;
+    }
+
+    &.react-tabs__tab--selected {
+      color: $theme-color;
+      &::before {
+        width: 100%;
+        background-color: currentColor;
+      }
+    }
+  }
+}

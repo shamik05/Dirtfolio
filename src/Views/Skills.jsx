@@ -1,8 +1,11 @@
-/* eslint-disable */
 import React from "react";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import {
+  Tab, TabList, TabPanel, Tabs,
+} from "react-tabs";
 import ServiceList from "../Components/SkillCard";
-import {Languages, Frameworks, Libraries, Others } from "../Constants/Skillset";
+import {
+  Languages, Frameworks, Libraries, Others,
+} from "../Constants/Skillset";
 
 const Skills = () => (
   <>
@@ -21,30 +24,30 @@ const Skills = () => (
 
           <div className="row creative-service">
             <div className="col-lg-12">
-            <Tabs>
-            <TabList>
-              <Tab>Languages</Tab>
-              <Tab>Frameworks</Tab>
-              <Tab>Libraries</Tab>
-              <Tab>Others</Tab>
-            </TabList>
+              <Tabs>
+                <TabList className="skills-tabs">
+                  <Tab>Languages</Tab>
+                  <Tab>Frameworks</Tab>
+                  <Tab>Libraries</Tab>
+                  <Tab>Others</Tab>
+                </TabList>
 
-            <TabPanel>
-              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Languages}/>
-            </TabPanel>
+                <TabPanel>
+                  <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Languages} />
+                </TabPanel>
 
-            <TabPanel>
-              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Frameworks}/>
-            </TabPanel>
-            
-            <TabPanel>
-              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Libraries}/>
-            </TabPanel>
+                <TabPanel>
+                  <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Frameworks} />
+                </TabPanel>
 
-            <TabPanel>
-              <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Others}/>
-            </TabPanel>
-          </Tabs>
+                <TabPanel>
+                  <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Libraries} />
+                </TabPanel>
+
+                <TabPanel>
+                  <ServiceList column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" list={Others} />
+                </TabPanel>
+              </Tabs>
             </div>
           </div>
         </div>
