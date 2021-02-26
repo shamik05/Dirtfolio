@@ -107,17 +107,19 @@ export const Libraries = [
     description: "I heavily used jQuery for dom manipulation and REST apis. It shortens the amount of code needing to be written.",
   },
   {
-    icon: <SiSocketDotIo />,
-    title: "Socket.IO",
-    description: "",
-  },
-  {
     icon: <Passport strokeWidth="1" height="1em" width="1em" />,
     title: "Passport.js",
+    description: "Passport.js was my first introduction to setting up authentication for my apps. Plus, ",
+  },
+  {
+    icon: <SiSocketDotIo />,
+    title: "Socket.IO",
+    description: "I encountered websockets when requiring bi-directional communication for our two player game. While Socket.IO isn't a pure websocket library, nonetheless it served as a good introduction to other protocols besides HTTP.",
   },
   {
     icon: <Inquirer fill="currentColor" />,
     title: "Inquirer.js",
+    description: "Inquirer was the first JavaScript library I encountered. Although it works, it's rather bulky and requires additional modification for async operations.",
   },
 ];
 
@@ -125,6 +127,7 @@ export const Others = [
   {
     icon: <SiVisualstudio />,
     title: "Visual Studio",
+    description: "Visual Studio is my choice IDE for windows. It has integrated source control support and the emmet snippets are a huge life saver when I want to quickly code something.",
   },
   {
     icon:
@@ -133,14 +136,17 @@ export const Others = [
     <SiGithub />
   </>,
     title: "Git/GitHub",
-  },
-  {
-    icon: <SiStrapi />,
-    title: "Strapi",
+    description: "The importance of a version control system was hammered into us at the bootcamp. Git also instilled the importance of team work and accountability as I heavily used pull requests to complete projects.",
   },
   {
     icon: <SiHeroku />,
     title: "Heroku",
+    description: "I use Heroku for deploying apps that require a backend. It's intuitive UI connected with GitHub makes deploying changes trivial. The cost to the free usage is apps sleep when they remain inactive.",
+  },
+  {
+    icon: <SiStrapi />,
+    title: "Strapi",
+    description: "Headless CMS introduced another layer organization once I understood how powerful it was. It is overkill for simple apps. But for web apps, having all your content seperate from your logic is a boon.",
   },
   {
     icon: <SiEslint />,
@@ -150,5 +156,6 @@ export const Others = [
   {
     icon: <SiDynamics365 />,
     title: "Dynamics CRM",
+    description: "CRM was my first window into how Sales, Leads, and Customers can be managed from a single app. Also, it taught me the importance of importing and sanitizing databases.",
   },
 ];
