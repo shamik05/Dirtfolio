@@ -8,7 +8,7 @@ const SkillCard = ({ column, list }) => {
       <div className="row">
         {list.map(({ title, icon, description="I throw myself down among the tall grass by the stream as I lie close to the earth." }) => (
           <div className={`${column}`} key={title}>
-            <a href="/service-details">
+            {/* <a href="/service-details"> */}
               <div className="service service__style--2">
                 <div className="icon">
                   {icon}
@@ -18,7 +18,7 @@ const SkillCard = ({ column, list }) => {
                   <p>{description}</p>
                 </div>
               </div>
-            </a>
+            {/* </a> */}
           </div>
         ))}
       </div>

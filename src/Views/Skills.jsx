@@ -16,8 +16,6 @@ const Skills = () => (
             <div className="col-lg-12">
               <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
                 <h2 className="title">Skills</h2>
-                {/* <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p> */}
-                {/* <Skillset /> */}
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable react/prop-types */
 import React from "react";
 import { GoRepoForked } from "react-icons/go";
 import { MdOpenInNew } from "react-icons/md";
@@ -15,23 +15,36 @@ const ProjectCard = (props) => {
       }) => (
         <div className={`${column}`} key={id}>
           <div className={`portfolio ${stylevariation}`}>
-          {/* <div className="ribbon ribbon-top-left"><span>ribbon</span></div> */}
-          {/* <div class="corner-ribbon top-left sticky red shadow">Hello</div> */}
+            {/* <div className="ribbon ribbon-top-left"><span>ribbon</span></div> */}
+            {/* <div class="corner-ribbon top-left sticky red shadow">Hello</div> */}
             <div className="thumbnail-inner">
-              <div className={`thumbnail ${"image-3"}`} />
-              {/* <div className={`bg-blr-image ${"image-3"}`} /> */}
+              <div className="thumbnail" style={{ backgroundImage: `url(${require(`../../Assets/Stills/${id}.png")`).default}` }} />
             </div>
             <div className="content">
               <div className="inner">
-                
+                <h4>{name}</h4>
                 <p>{description}</p>
-                <h4><a href="/portfolio-details">{name}</a></h4>
                 <div className="portfolio-button">
-                  <a className="rn-btn" href={depo}>
+                  <a
+                    className="rn-btn"
+                    href={depo}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    alt="Opens new link to the project repository"
+                    style={{ margin: "20px" }}
+                  >
                     <GoRepoForked />
                     Read More
                   </a>
-                  <a className="rn-btn" href={repo}>
+                  <a
+                    className="rn-btn"
+                    href={repo}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    alt="Opens new link to deployed site"
+                  >
                     <MdOpenInNew />
                     Visit Website
                   </a>

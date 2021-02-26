@@ -49,7 +49,7 @@ export const Languages = [
     <Sequelize stroke="currentColor" fill="currentColor" height="1em" width="1em" />
   </>,
     title: "SQL/MySQL/Sequelize",
-    description: "I had to self-learn SQL on the job but the bootcamp greatly increased my understanding and potency by introducing MySQL. Sequelize is my go-to ORM if needed. I hope to learn Postgres as well.",
+    description: "I self-learned SQL on the job but the bootcamp increased my understanding and potency by introducing MySQL. Sequelize is my go-to ORM if needed. I hope to learn Postgres as well.",
   },
   {
     icon:
@@ -57,8 +57,8 @@ export const Languages = [
     <DiMongodb />
     <Mongoose stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.1em" width="1.1em" />
   </>,
-    title: "NoSQL/MongoDB/Mongoose",
-    description: "MongoDB is easier to setup and work with when I need to store data such as array and objects without worrying about any row manipulation. Mongoose is my go-to ODM.",
+    title: "MongoDB/Mongoose",
+    description: "MongoDB (w/ Mongoose) is easier to setup and work with when I need to store data such as array and objects without worrying about any row manipulation.",
   },
   {
     icon: <Handlebars stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.1em" width="1.1em" />,
@@ -109,7 +109,7 @@ export const Libraries = [
   {
     icon: <Passport strokeWidth="1" height="1em" width="1em" />,
     title: "Passport.js",
-    description: "Passport.js was my first introduction to setting up authentication for my apps. Plus, ",
+    description: "Passport.js was my first introduction to setting up authentication for my apps. Also, there are multiple strategies to pick and choose including two factor authentication.",
   },
   {
     icon: <SiSocketDotIo />,
