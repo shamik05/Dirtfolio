@@ -63,7 +63,7 @@ export const Languages = [
   {
     icon: <Handlebars stroke="currentColor" fill="currentColor" strokeWidth="1" height="1.1em" width="1.1em" />,
     title: "Handlebars",
-    description: "Express Handlebars was the next step after working with basic html pages. Mapping data from the back-end became significantly easier and was used in the Wheels Gone Wild project.",
+    description: "Express Handlebars was the next step after working with basic html pages. Mapping data from the back-end  into placeholders became significantly easier.",
   },
 ];
 

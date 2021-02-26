@@ -1,24 +1,29 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable */
 import React from "react";
 import { GoRepoForked } from "react-icons/go";
 import { MdOpenInNew } from "react-icons/md";
 import ProjectList from "../../Constants/ProjectList";
 import "./ProjectCard.scss";
+import "../../Assets/Stills/bow.png";
+import { useState } from "react";
 
 const ProjectCard = (props) => {
   const { column, stylevariation } = props;
+  const [show, setShow] = useState(false);
 
   return (
     <>
       {ProjectList.map(({
         name, id, description, repo, depo,
       }) => (
-        <div className={`${column}`} key={id}>
+        <div className={`${column}`} key={id} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
           <div className={`portfolio ${stylevariation}`}>
-            {/* <div className="ribbon ribbon-top-left"><span>ribbon</span></div> */}
-            {/* <div class="corner-ribbon top-left sticky red shadow">Hello</div> */}
             <div className="thumbnail-inner">
-              <div className="thumbnail" style={{ backgroundImage: `url(${require(`../../Assets/Stills/${id}.png")`).default}` }} />
+              <div className="thumbnail" style={{ 
+                backgroundImage: `url(${require(`../../Assets/Stills/${id}.png`).default}` }} />
+              {/* {show ? <div className="thumbnail" style={{ backgroundImage: `url(${require(`../../Assets/Gifs/${id}.gif`).default}` }} /> :
+              <div className="thumbnail" style={{ backgroundImage: `url(${require(`../../Assets/Stills/${id}.png`).default}` }} />
+              } */}
             </div>
             <div className="content">
               <div className="inner">

@@ -39,14 +39,14 @@ const projectsList = [
     repo: "https://github.com/shamik05/Employee-Directory",
     depo: "https://shamik05.github.io/Employee-Directory/",
   },
-  {
-    name: "Employee CMS",
-    id: "nec",
-    description: "A node based CMS for employee management using the Inquirer library.",
-    tech: ["Node", "Inquirer", "MySQL", "Figlet"],
-    repo: "https://github.com/shamik05/Employee-CMS",
-    depo: "https://github.com/shamik05/Employee-CMS",
-  },
+  // {
+  //   name: "Employee CMS",
+  //   id: "nec",
+  //   description: "A node based CMS for employee management using the Inquirer library.",
+  //   tech: ["Node", "Inquirer", "MySQL", "Figlet"],
+  //   repo: "https://github.com/shamik05/Employee-CMS",
+  //   depo: "https://github.com/shamik05/Employee-CMS",
+  // },
 ];
 
 export default projectsList;

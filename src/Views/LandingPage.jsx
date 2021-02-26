@@ -3,8 +3,8 @@ import TextLoop from "react-text-loop";
 
 const SlideList = {
   textPosition: "text-left",
-  category: "<H1>",
-  description: "</H1>",
+  // category: "<H1>",
+  // description: "</H1>",
   buttonText: "buttonText",
   buttonLink: "buttonLink",
 };

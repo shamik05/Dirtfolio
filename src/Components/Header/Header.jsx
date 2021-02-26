@@ -33,12 +33,12 @@ const Header = ({ homeLink, color }) => {
     <header className={`header-area header-style-two header--fixed ${color}`}>
       <div className="header-wrapper">
         <div className="header-left d-flex align-items-center">
-          <div className="logo">
+          {/* <div className="logo">
             <a href={homeLink}>
-              {/* {logoUrl} */}
-              {/* <img src={require("../../logo_size.jpg").default} alt="Website Logo" /> */}
+              {logoUrl}
+              <img src={require("../../logo_size.jpg").default} alt="Website Logo" />
             </a>
-          </div>
+          </div> */}
           <div className="social-share-inner">
             <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
               {SocialShare.map(({ key, link, Social }) => (
