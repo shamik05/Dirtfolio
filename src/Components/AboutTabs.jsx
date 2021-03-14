@@ -145,7 +145,6 @@ const AboutTabs = ({ tabStyle }) => {
                     </ul>
                   </div>
                 </TabPanel>
-
               </Tabs>
             </div>
           </div>

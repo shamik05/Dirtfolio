@@ -28,6 +28,7 @@
             "error", {"patterns": ["@material-ui/*/*/*", "!@material-ui/core/test-utils/*"]}
           ],
         "react/require-default-props": [0],
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off"
     }
 }
