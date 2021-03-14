@@ -13,16 +13,16 @@ import "./index.scss";
 
 const App = () => (
   <div className="active-dark">
-    <Header homeLink="/" logo="symbol-dark" color="color-black" />
-    <LandingPage />
+    {/* <Header homeLink="/" logo="symbol-dark" color="color-black" /> */}
+    {/* <LandingPage /> */}
     {/* <Parallax bgImage={image1} bgImageAlt="Background Image" strength={500} > */}
       <About />
      
-      <Skills />
-      <Projects />
+      {/* <Skills /> */}
+      {/* <Projects /> */}
       {/* </Parallax> */}
-      <Footer />
-      <ScrollTop />
+      {/* <Footer /> */}
+      {/* <ScrollTop /> */}
 
   </div>
 );
