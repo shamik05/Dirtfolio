@@ -1,7 +1,10 @@
 @import "../../Assets/scss/variables";
 
 .skills__tabs__wrapper {
-  .skills__tabs {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .skills__tablist {
     padding: 0;
     margin: 0 0 20px;
     list-style: none;
@@ -40,8 +43,23 @@
         bottom: 0;
       }
 
+      &:hover {
+        &::before {
+          color: $theme-color;
+        width: 100%;
+        background-color: currentColor;
+        }
+      }
+      h3:hover {
+        color: $theme-color; 
+      }
+
       &.react-tabs__tab--selected {
         color: $theme-color;
+
+        h3 {
+          color: $theme-color;
+        }
         &::before {
           width: 100%;
           background-color: currentColor;
