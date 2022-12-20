@@ -1,0 +1,22 @@
+<div className="header-left">
+          <ul>
+            <li>
+              <a href="mailto:shamikhaldar05@gmail.com"><img src={email} alt="Email" /></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/shamik-h/"><img src={linkedin} alt="LinkedIn" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/shamik05"><img src={github} alt="GitHub" /></a>
+            </li>
+            {/* <li>
+              <a href="https://www.codewars.com/users/shamik05">Codewars</a>
+            </li> */}
+          </ul>
+
+          <div className="header-btn">
+            <a href="./cat_loops.png" download="resume" className="rn-btn">
+              HIRE ME
+            </a>
+          </div>
+        </div>
