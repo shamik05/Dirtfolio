@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shamik05/Dirtfolio/static/css/main.eab38179.css",
-    "main.js": "/shamik05/Dirtfolio/static/js/main.b712be1e.js",
-    "static/media/undraw_developer.svg": "/shamik05/Dirtfolio/static/media/undraw_developer.3f53d42f4a5459c89183f1d914ee49b0.svg",
-    "index.html": "/shamik05/Dirtfolio/index.html",
-    "static/media/github.svg": "/shamik05/Dirtfolio/static/media/github.b4d0c17a16cf4b9e699d43edcf5d3eea.svg",
-    "static/media/linkedin.svg": "/shamik05/Dirtfolio/static/media/linkedin.37b9ad5537ddd7712e8989dbe1d7964c.svg",
-    "static/media/email.svg": "/shamik05/Dirtfolio/static/media/email.4220d83f41d6858481b7240e58c0e2e7.svg",
-    "main.eab38179.css.map": "/shamik05/Dirtfolio/static/css/main.eab38179.css.map",
-    "main.b712be1e.js.map": "/shamik05/Dirtfolio/static/js/main.b712be1e.js.map"
+    "main.css": "/shamik05/Dirtfolio_Real/static/css/main.eab38179.css",
+    "main.js": "/shamik05/Dirtfolio_Real/static/js/main.edee26fe.js",
+    "static/media/undraw_developer.svg": "/shamik05/Dirtfolio_Real/static/media/undraw_developer.3f53d42f4a5459c89183f1d914ee49b0.svg",
+    "index.html": "/shamik05/Dirtfolio_Real/index.html",
+    "static/media/github.svg": "/shamik05/Dirtfolio_Real/static/media/github.b4d0c17a16cf4b9e699d43edcf5d3eea.svg",
+    "static/media/linkedin.svg": "/shamik05/Dirtfolio_Real/static/media/linkedin.37b9ad5537ddd7712e8989dbe1d7964c.svg",
+    "static/media/email.svg": "/shamik05/Dirtfolio_Real/static/media/email.4220d83f41d6858481b7240e58c0e2e7.svg",
+    "main.eab38179.css.map": "/shamik05/Dirtfolio_Real/static/css/main.eab38179.css.map",
+    "main.edee26fe.js.map": "/shamik05/Dirtfolio_Real/static/js/main.edee26fe.js.map"
   },
   "entrypoints": [
     "static/css/main.eab38179.css",
-    "static/js/main.b712be1e.js"
+    "static/js/main.edee26fe.js"
   ]
 }
