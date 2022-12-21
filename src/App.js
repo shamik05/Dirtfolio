@@ -16,7 +16,7 @@ function App() {
           <li><a href="#projects">Projects</a></li>
           <li><a href="secret">Secret</a></li>
         </ul>
-        UNDER CONSTRUCTIOn
+
       </header>
 
       <section id="About" className="About">
@@ -28,7 +28,7 @@ function App() {
           <h1>Who am I?</h1>
           <p>Hi, my name is Shamik Haldar and I am a 29 year old Ottawa resident. I have always had a love for computers and puzzle solving which has lead me to coding. Currently, I am no better than a novice programmer and considering the wealth of technical information out there, I hope to always remain in a learner's position. This is my first website created with bootstrap. Like, Comment and Subscribe!</p>
           <div className="About__Footer">
-            <a className="About__Hire" href="" download="Resume.pdf">HIRE ME</a>
+            <a className="About__Hire" href="Shamik_Resume.pdf" download>HIRE ME</a>
             
             <ul className="About__Social">
               <li>
