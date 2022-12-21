@@ -3,21 +3,13 @@ import linkedin from "./assets/icons/linkedin.svg";
 import github from "./assets/icons/github.svg";
 import home from "./assets/undraw_developer.svg";
 import './App.css';
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-      
       <main className="Main">
-
-      <header className="Header">
-        <ul className="Header__List">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="secret">Secret</a></li>
-        </ul>
-
-      </header>
+        <Header />
 
       <section id="About" className="About">
         <div className="About__Left">

@@ -25,7 +25,7 @@
 .About__Right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   padding-left: 1rem;
 }
 
@@ -77,33 +77,6 @@
 
 .About__Social li {
   margin: 0 1rem;
-}
-
-.Header {
-  /* width: 40%; */
-  width: fit-content;
-  background-color: #252529;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-}
-
-.Header a {
-  color: #f4f4f5;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.Header li {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.Header__List {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /* .Home {
