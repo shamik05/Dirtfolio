@@ -3,7 +3,7 @@ import linkedin from "./assets/icons/linkedin.svg";
 import github from "./assets/icons/github.svg";
 import home from "./assets/undraw_developer.svg";
 import './App.css';
-import Header from "./Header";
+import Header from "./app/Header";
 
 function App() {
   return (
