@@ -1,12 +1,15 @@
 module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
         // Chess color palette
-        'chess-dark': '#1a1a1a',      // Dark squares
-        'chess-light': '#f8f8f8',     // Light squares  
-        'chess-green': '#769656',     // Highlight green
-        'chess-brown': '#b58863',     // Accent brown
+        'chess-dark': '#1a1a1a',
+        'chess-light': '#f8f8f8',  
+        'chess-green': '#769656',
+        'chess-brown': '#b58863',
       },
       animation: {
         'grow': 'grow 1s ease-out forwards',
@@ -17,6 +20,7 @@ module.exports = {
           '100%': { height: '6rem' },
         }
       }
-    }
-  }
+    },
+  },
+  plugins: [],
 }

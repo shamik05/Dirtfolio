@@ -1,62 +1,65 @@
-import Image from 'next/image';
-import { ChessKnight, ChessPawn } from './ChessPieces';
-import email from '../assets/icons/email.svg';
-import linkedin from '../assets/icons/linkedin.svg'; 
-import github from '../assets/icons/github.svg';
-import './hero.css';
+"use client";
+
+import { motion } from "framer-motion";
+import { ChessKnight, ChessPawn } from "./ChessPieces";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <section className="min-h-screen bg-chess-light flex items-center justify-center px-4 relative">
-      {/* Chess Board Background Pattern - USING CSS CLASS */}
-      <div className="absolute inset-0 opacity-5 chess-board-bg"></div>
-
-      {/* Vertical Social Links - Desktop */}
-      <div className="hidden md:flex flex-col items-center space-y-6 absolute left-8 lg:left-12 z-10">
+      {/* Vertical Social Links - Desktop with Framer Motion */}
+      <motion.div 
+        className="hidden md:flex flex-col items-center absolute left-8 lg:left-12 z-10"
+        initial={{ scaleY: 0, opacity: 0, transformOrigin: "top" }}
+        animate={{ scaleY: 1, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="flex flex-col items-center space-y-6">
-          <div className="relative group">
-            <a 
-              href="mailto:shamikhaldar05@gmail.com" 
-              className="transition-all hover:scale-110 hover:translate-x-1 block"
-              aria-label="Email"
-            >
-              <Image src={email} alt="Email" width={32} height={32} className="w-8 h-8" />
+          {/* Social Icons with staggered animation */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="relative group"
+          >
+            <a href="mailto:shamikhaldar05@gmail.com" className="transition-all hover:scale-110 hover:translate-x-1 block">
+              <FaEnvelope className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
             </a>
             <div className="absolute left-full ml-2 px-2 py-1 bg-chess-dark text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               Email Me
             </div>
-          </div>
+          </motion.div>
 
-          <div className="relative group">
-            <a 
-              href="http://www.linkedin.com/in/shamik-h/" 
-              className="transition-all hover:scale-110 hover:translate-x-1 block"
-              aria-label="LinkedIn"
-            >
-              <Image src={linkedin} alt="LinkedIn" width={32} height={32} className="w-8 h-8" />
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="relative group"
+          >
+            <a href="http://www.linkedin.com/in/shamik-h/" className="transition-all hover:scale-110 hover:translate-x-1 block">
+              <FaLinkedin className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
             </a>
             <div className="absolute left-full ml-2 px-2 py-1 bg-chess-dark text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               LinkedIn
             </div>
-          </div>
+          </motion.div>
 
-          <div className="relative group">
-            <a 
-              href="https://github.com/shamik05" 
-              className="transition-all hover:scale-110 hover:translate-x-1 block"
-              aria-label="GitHub"
-            >
-              <Image src={github} alt="GitHub" width={32} height={32} className="w-8 h-8" />
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="relative group"
+          >
+            <a href="https://github.com/shamik05" className="transition-all hover:scale-110 hover:translate-x-1 block">
+              <FaGithub className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
             </a>
             <div className="absolute left-full ml-2 px-2 py-1 bg-chess-dark text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               GitHub
             </div>
-          </div>
+          </motion.div>
         </div>
-        
-        {/* Animated Vertical Line */}
-        <div className="h-0 w-0.5 bg-chess-brown/30 mt-4 animate-grow"></div>
-      </div>
+        {/* Brown Line Removed */}
+      </motion.div>
 
       {/* Main Content */}
       <div className="text-center max-w-2xl relative z-10">
@@ -77,7 +80,7 @@ export default function Hero() {
         </p>
         
         {/* Tagline */}
-        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-md mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-md mx-auto leading-relaxed">
           Strategic code, calculated moves
         </p>
         
@@ -89,9 +92,24 @@ export default function Hero() {
         {/* Mobile Social Links - Horizontal with Tooltips */}
         <div className="flex md:hidden justify-center space-x-8 mb-16">
           {[
-            { href: "mailto:shamikhaldar05@gmail.com", icon: email, label: "Email", tooltip: "Email Me" },
-            { href: "http://www.linkedin.com/in/shamik-h/", icon: linkedin, label: "LinkedIn", tooltip: "LinkedIn" },
-            { href: "https://github.com/shamik05", icon: github, label: "GitHub", tooltip: "GitHub" }
+            { 
+              href: "mailto:shamikhaldar05@gmail.com", 
+              icon: FaEnvelope, 
+              label: "Email", 
+              tooltip: "Email Me" 
+            },
+            { 
+              href: "http://www.linkedin.com/in/shamik-h/", 
+              icon: FaLinkedin, 
+              label: "LinkedIn", 
+              tooltip: "LinkedIn" 
+            },
+            { 
+              href: "https://github.com/shamik05", 
+              icon: FaGithub, 
+              label: "GitHub", 
+              tooltip: "GitHub" 
+            }
           ].map((social, index) => (
             <div key={index} className="relative group">
               <a 
@@ -99,7 +117,7 @@ export default function Hero() {
                 className="transition-transform hover:scale-110 block"
                 aria-label={social.label}
               >
-                <Image src={social.icon} alt={social.label} width={32} height={32} className="w-8 h-8" />
+                <social.icon className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
               </a>
               <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-chess-dark text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {social.tooltip}
@@ -114,5 +132,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
