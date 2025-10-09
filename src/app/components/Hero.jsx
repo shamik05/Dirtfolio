@@ -1,10 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChessKnight, ChessPawn } from "./ChessPieces";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaChessPawn } from "react-icons/fa";
+import { GiChessRook, GiChessKnight, GiChessBishop, GiChessQueen, GiChessKing } from "react-icons/gi";
 
 export default function Hero() {
+  const pieces = [
+    { Icon: GiChessRook, position: 0 },
+    { Icon: GiChessKnight, position: 1 },
+    { Icon: GiChessBishop, position: 2 },
+    { Icon: GiChessQueen, position: 3 },
+    { Icon: GiChessKing, position: 4 }, // Center king
+    { Icon: GiChessBishop, position: 5 },
+    { Icon: GiChessKnight, position: 6 },
+    { Icon: GiChessRook, position: 7 },
+  ];
+
   return (
     <section className="min-h-screen bg-chess-light flex items-center justify-center px-4 relative">
       {/* Vertical Social Links - Desktop with Framer Motion */}
@@ -58,36 +69,88 @@ export default function Hero() {
             </div>
           </motion.div>
         </div>
-        {/* Brown Line Removed */}
       </motion.div>
 
       {/* Main Content */}
       <div className="text-center max-w-2xl relative z-10">
-        {/* Interactive Knight Icon */}
-        <div className="mb-8 group cursor-pointer">
-          <ChessKnight className="w-24 h-24 mx-auto text-chess-brown transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:text-chess-green" />
-          <p className="text-xs text-gray-500 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Clicking this won't actually do anything... yet! ♟️
+        {/* Chess Pieces Row - Group Hover Container */}
+        <div className="mb-8 group cursor-pointer relative h-24 flex items-center justify-center">
+          <div className="flex items-center justify-center space-x-2 md:space-x-4 relative">
+            {pieces.map(({ Icon, position }) => (
+              <motion.div
+                key={position}
+                className="relative"
+                initial={{ opacity: 1, x: 0, scale: 1 }}
+                whileHover="hover"
+                variants={{
+                  hover: {
+                    x: position < 4 ? -50 * (4 - position) : position > 4 ? 50 * (position - 4) : 0,
+                    opacity: position === 4 ? 1 : 0,
+                    scale: position === 4 ? 1.3 : 0.5,
+                    transition: {
+                      type: "spring",
+                      stiffness: 100,
+                      damping: 15,
+                      delay: position === 4 ? 0.2 : 0.1 * Math.abs(position - 4),
+                    }
+                  }
+                }}
+              >
+                <Icon 
+                  className={`w-8 h-8 md:w-12 md:h-12 transition-colors duration-300 ${
+                    position === 4 
+                      ? "text-chess-brown group-hover:text-chess-green" 
+                      : "text-chess-brown"
+                  }`} 
+                />
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-500 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+            All pieces bow to the king! ♟️
           </p>
         </div>
         
         {/* Name & Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-chess-dark mb-4">
+        <motion.h1 
+          className="text-4xl md:text-6xl font-bold text-chess-dark mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
           Shamik Haldar
-        </h1>
-        <p className="text-xl md:text-2xl text-chess-dark mb-6">
+        </motion.h1>
+        
+        <motion.p 
+          className="text-xl md:text-2xl text-chess-dark mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
           Full Stack Developer
-        </p>
+        </motion.p>
         
         {/* Tagline */}
-        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-md mx-auto leading-relaxed">
+        <motion.p 
+          className="text-lg md:text-xl text-gray-700 mb-8 max-w-md mx-auto leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
           Strategic code, calculated moves
-        </p>
+        </motion.p>
         
         {/* CTA Button */}
-        <button className="bg-chess-green hover:bg-chess-dark text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 mb-12 shadow-lg hover:shadow-xl">
+        <motion.button 
+          className="bg-chess-green hover:bg-chess-dark text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 mb-12 shadow-lg hover:shadow-xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           View My Work →
-        </button>
+        </motion.button>
         
         {/* Mobile Social Links - Horizontal with Tooltips */}
         <div className="flex md:hidden justify-center space-x-8 mb-16">
@@ -127,9 +190,14 @@ export default function Hero() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="animate-bounce">
-          <ChessPawn className="w-6 h-6 mx-auto text-chess-brown" />
-        </div>
+        <motion.div 
+          className="animate-bounce"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <FaChessPawn className="w-6 h-6 mx-auto text-chess-brown" />
+        </motion.div>
       </div>
     </section>
   );
