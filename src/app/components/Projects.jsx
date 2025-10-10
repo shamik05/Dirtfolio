@@ -77,9 +77,9 @@ export default function Projects() {
 function ProjectCard({ project, index }) {
   const isEven = index % 2 === 0;
   
-  // Define colors based on index (odd/even)
-  const accentColor = isEven ? '#769656' : '#b58863'; // Green for even, Brown for odd
-  
+  // Define colors based on index
+  const accentColor = isEven ? '#769656' : '#b58863';
+
   return (
     <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
       {/* Image/Visual Side */}
@@ -87,7 +87,7 @@ function ProjectCard({ project, index }) {
         <div className="relative group">
           {/* Placeholder for project screenshot */}
           <div 
-            className="w-full h-80 bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center transition-transform group-hover:scale-105"
+            className="w-full h-80 bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center transition-transform group-hover:scale-105 relative"
             style={{ border: `4px solid ${accentColor}` }}
           >
             <div className="text-center p-8">
@@ -101,14 +101,14 @@ function ProjectCard({ project, index }) {
                 Add your project screenshot here
               </p>
             </div>
-          </div>
-          
-          {/* Chess piece indicator */}
-          <div 
-            className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
-            style={{ backgroundColor: accentColor }}
-          >
-            {index + 1}
+            
+            {/* Chess piece indicator */}
+            <div 
+              className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+              style={{ backgroundColor: accentColor }}
+            >
+              {index + 1}
+            </div>
           </div>
         </div>
       </div>
