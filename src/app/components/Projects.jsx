@@ -12,8 +12,7 @@ export const projects = [
     technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES"],
     liveLink: "https://your-lsd-app.vercel.app",
     codeLink: "https://github.com/your-username/LSD-Snapshot",
-    image: "/images/lsd-screenshot.png", // You'll add this later
-    accentColor: "#769656" // Chess green
+    image: "/images/lsd-screenshot.png",
   },
   {
     id: 2,
@@ -28,7 +27,6 @@ export const projects = [
     liveLink: "https://your-employee-directory.vercel.app",
     codeLink: "https://github.com/your-username/employee-directory",
     image: "/images/employee-directory.png",
-    accentColor: "#b58863" // Chess brown
   },
   {
     id: 3,
@@ -40,10 +38,9 @@ export const projects = [
       "CRUD operations for employees"
     ],
     technologies: ["Node.js", "MySQL", "Inquirer", "CLI"],
-    liveLink: null, // CLI app might not have live demo
+    liveLink: null,
     codeLink: "https://github.com/your-username/employee-cms",
     image: "/images/employee-cms.png",
-    accentColor: "#1a1a1a" // Chess dark
   }
 ];
 
@@ -80,6 +77,9 @@ export default function Projects() {
 function ProjectCard({ project, index }) {
   const isEven = index % 2 === 0;
   
+  // Define colors based on index (odd/even)
+  const accentColor = isEven ? '#769656' : '#b58863'; // Green for even, Brown for odd
+  
   return (
     <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}>
       {/* Image/Visual Side */}
@@ -88,10 +88,10 @@ function ProjectCard({ project, index }) {
           {/* Placeholder for project screenshot */}
           <div 
             className="w-full h-80 bg-gray-200 rounded-2xl shadow-lg flex items-center justify-center transition-transform group-hover:scale-105"
-            style={{ border: `4px solid ${project.accentColor}` }}
+            style={{ border: `4px solid ${accentColor}` }}
           >
             <div className="text-center p-8">
-              <div className="text-6xl mb-4" style={{ color: project.accentColor }}>
+              <div className="text-6xl mb-4" style={{ color: accentColor }}>
                 ♟️
               </div>
               <p className="text-gray-500 font-semibold">
@@ -106,7 +106,7 @@ function ProjectCard({ project, index }) {
           {/* Chess piece indicator */}
           <div 
             className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
-            style={{ backgroundColor: project.accentColor }}
+            style={{ backgroundColor: accentColor }}
           >
             {index + 1}
           </div>
@@ -131,7 +131,7 @@ function ProjectCard({ project, index }) {
               <li key={i} className="flex items-start">
                 <span 
                   className="inline-block w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0"
-                  style={{ backgroundColor: project.accentColor }}
+                  style={{ backgroundColor: accentColor }}
                 ></span>
                 <span className="text-gray-700">{feature}</span>
               </li>
@@ -148,9 +148,9 @@ function ProjectCard({ project, index }) {
                 key={i}
                 className="px-3 py-1 rounded-full text-sm font-medium border"
                 style={{ 
-                  borderColor: project.accentColor,
-                  color: project.accentColor,
-                  backgroundColor: `${project.accentColor}10`
+                  borderColor: accentColor,
+                  color: accentColor,
+                  backgroundColor: `${accentColor}10`
                 }}
               >
                 {tech}
@@ -168,7 +168,7 @@ function ProjectCard({ project, index }) {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
               style={{ 
-                backgroundColor: project.accentColor,
+                backgroundColor: accentColor,
                 color: 'white'
               }}
             >
@@ -181,8 +181,8 @@ function ProjectCard({ project, index }) {
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg font-semibold border-2 transition-all hover:scale-105"
             style={{ 
-              borderColor: project.accentColor,
-              color: project.accentColor
+              borderColor: accentColor,
+              color: accentColor
             }}
           >
             View Code
