@@ -18,7 +18,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="min-h-screen bg-chess-light flex items-center justify-center px-4 relative">
+    <section id="hero" className="min-h-screen bg-chess-light flex items-center justify-center px-4 relative">
       {/* Social Links Component */}
       <SocialLinks />
 
