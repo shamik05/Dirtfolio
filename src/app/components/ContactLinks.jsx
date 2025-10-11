@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub, FaChessKnight } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function ContactLinks() {
   const contactMethods = [
@@ -34,8 +34,7 @@ export default function ContactLinks() {
     >
       <h3 className="text-2xl font-bold text-chess-dark mb-6">Get in Touch</h3>
       
-      {/* Contact Methods */}
-      <div className="space-y-6 mb-8">
+      <div className="space-y-6">
         {contactMethods.map((method, index) => (
           <motion.a
             key={method.label}
@@ -58,20 +57,6 @@ export default function ContactLinks() {
           </motion.a>
         ))}
       </div>
-
-      {/* Chess Quote */}
-      <motion.div 
-        className="bg-chess-light rounded-2xl p-6 border-l-4 border-chess-green"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        viewport={{ once: true }}
-      >
-        <FaChessKnight className="w-8 h-8 text-chess-green mb-3" />
-        <p className="text-chess-dark font-medium italic">
-          "In chess, as in development, every move should be strategic. Let's plan our next move together."
-        </p>
-      </motion.div>
     </motion.div>
   );
 }
