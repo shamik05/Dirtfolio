@@ -33,9 +33,9 @@ export default function Hero() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-500 mt-2 opacity-70 transition-opacity duration-300 absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+          {/* <p className="text-xs text-gray-500 mt-2 opacity-70 transition-opacity duration-300 absolute -bottom-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
             Complete chess set - All pieces in position! ♟️
-          </p>
+          </p> */}
         </div>
         
         {/* Name & Title */}
