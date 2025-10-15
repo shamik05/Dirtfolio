@@ -9,9 +9,9 @@ export const projects = [
       "Crypto news integration",
       "Contact form with email notifications"
     ],
-    technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES"],
-    liveLink: "https://your-lsd-app.vercel.app",
-    codeLink: "https://github.com/your-username/LSD-Snapshot",
+    technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES", "Materialize"],
+    liveLink: "https://lsd-snapshot.vercel.app/",
+    codeLink: "https://github.com/shamik05/LSD-Snapshot",
     image: "/images/lsd-screenshot.png",
   },
   {
@@ -24,8 +24,8 @@ export const projects = [
       "Modern React hooks"
     ],
     technologies: ["React", "CSS3", "JavaScript"],
-    liveLink: "https://your-employee-directory.vercel.app",
-    codeLink: "https://github.com/your-username/employee-directory",
+    liveLink: "https://employee-directory-topaz-eight.vercel.app/",
+    codeLink: "https://github.com/shamik05/Employee-Directory",
     image: "/images/employee-directory.png",
   },
   {
@@ -39,7 +39,7 @@ export const projects = [
     ],
     technologies: ["Node.js", "MySQL", "Inquirer", "CLI"],
     liveLink: null,
-    codeLink: "https://github.com/your-username/employee-cms",
+    codeLink: "https://github.com/shamik05/Employee-CMS",
     image: "/images/employee-cms.png",
   }
 ];
