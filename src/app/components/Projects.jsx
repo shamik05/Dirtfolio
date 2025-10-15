@@ -1,64 +1,15 @@
-export const projects = [
-  {
-    id: 1,
-    title: "LSD Snapshot",
-    description: "LSD is an exchange-neutral tool designed for modern cryptocurrency traders. Provides real-time prices, historical data, crypto podcasts, and news to help traders make informed decisions.",
-    features: [
-      "Track real-time cryptocurrency prices",
-      "Historical price data and charts", 
-      "Crypto news integration",
-      "Contact form with email notifications"
-    ],
-    technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES"],
-    liveLink: "https://your-lsd-app.vercel.app",
-    codeLink: "https://github.com/your-username/LSD-Snapshot",
-    image: "/images/lsd-screenshot.png",
-  },
-  {
-    id: 2,
-    title: "Employee Directory",
-    description: "A React frontend application for managing and viewing employee information with search and filter capabilities.",
-    features: [
-      "Employee search and filtering",
-      "Responsive design",
-      "Modern React hooks"
-    ],
-    technologies: ["React", "CSS3", "JavaScript"],
-    liveLink: "https://your-employee-directory.vercel.app",
-    codeLink: "https://github.com/your-username/employee-directory",
-    image: "/images/employee-directory.png",
-  },
-  {
-    id: 3,
-    title: "Employee CMS",
-    description: "A CLI Node.js application for employee management with MySQL database integration.",
-    features: [
-      "Command-line interface",
-      "MySQL database integration", 
-      "CRUD operations for employees"
-    ],
-    technologies: ["Node.js", "MySQL", "Inquirer", "CLI"],
-    liveLink: null,
-    codeLink: "https://github.com/your-username/employee-cms",
-    image: "/images/employee-cms.png",
-  }
-];
+import { projects } from "../data/projects";
 
 export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-chess-dark mb-4">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Each project is a strategic move in my development journey
-          </p>
         </div>
 
-        {/* Projects Grid */}
         <div className="space-y-24">
           {projects.map((project, index) => (
             <ProjectCard 
