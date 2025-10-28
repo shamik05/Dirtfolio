@@ -1,3 +1,3 @@
-https://shamik05.github.io/Dirtfolio
+https://shamikhaldar.vercel.app/
 
 BEING REBUILT BECAUSE OF HEROKU FREE TIER VANISHING
