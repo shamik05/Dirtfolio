@@ -29,7 +29,7 @@ export const projects = [
       "Clean, intuitive user interface"
     ],
     technologies: ["React", "JavaScript", "Context API", "Custom Hooks", "CSS3", "HTML5"],
-    liveLink: "https://employee-directory-shamik.vercel.app",
+    liveLink: "https://employee-directory-topaz-eight.vercel.app",
     codeLink: "https://github.com/shamik05/employee-directory",
     gif: "/images/employee-directory.gif",
     image: "/images/employee-directory.png",
