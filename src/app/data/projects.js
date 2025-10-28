@@ -1,45 +1,56 @@
 export const projects = [
   {
-    id: 1,
+    id: 0,
     title: "LSD Snapshot",
-    description: "LSD is an exchange-neutral tool designed for modern cryptocurrency traders. Provides real-time prices, historical data, crypto podcasts, and news to help traders make informed decisions.",
+    description: "A comprehensive cryptocurrency tracking platform providing real-time market data, historical charts, and crypto news aggregation to help traders make informed decisions.",
     features: [
-      "Track real-time cryptocurrency prices",
-      "Historical price data and charts", 
-      "Crypto news integration",
-      "Contact form with email notifications"
+      "Real-time cryptocurrency price tracking from multiple exchanges",
+      "Interactive historical price charts with multiple timeframes", 
+      "News aggregation from top crypto publications",
+      "Responsive design optimized for desktop and mobile",
+      "Contact system with automated email notifications"
     ],
-    technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES", "Materialize"],
-    liveLink: "https://lsd-snapshot.vercel.app/",
+    technologies: ["React", "Node.js", "Express", "CoinCap API", "NewsAPI", "Amazon SES", "Chart.js", "Tailwind CSS"],
+    liveLink: "https://lsd-snapshot.vercel.app",
     codeLink: "https://github.com/shamik05/LSD-Snapshot",
     image: "/images/lsd-screenshot.png",
+    gif: "/images/lsd.gif",
+    status: "Live"
+  },
+  {
+    id: 1,
+    title: "Employee Directory",
+    description: "A modern React application for managing employee information with advanced search, filtering, and sorting capabilities.",
+    features: [
+      "Advanced search by name, department, or role",
+      "Multi-criteria filtering system", 
+      "Sortable employee data tables",
+      "Responsive mobile-first design",
+      "Clean, intuitive user interface"
+    ],
+    technologies: ["React", "JavaScript", "Context API", "Custom Hooks", "CSS3", "HTML5"],
+    liveLink: "https://employee-directory-shamik.vercel.app",
+    codeLink: "https://github.com/shamik05/employee-directory",
+    gif: "/images/employee-directory.gif",
+    image: "/images/employee-directory.png",
+    status: "Live"
   },
   {
     id: 2,
-    title: "Employee Directory",
-    description: "A React frontend application for managing and viewing employee information with search and filter capabilities.",
-    features: [
-      "Employee search and filtering",
-      "Responsive design",
-      "Modern React hooks"
-    ],
-    technologies: ["React", "CSS3", "JavaScript"],
-    liveLink: "https://employee-directory-topaz-eight.vercel.app/",
-    codeLink: "https://github.com/shamik05/Employee-Directory",
-    image: "/images/employee-directory.png",
-  },
-  {
-    id: 3,
     title: "Employee CMS",
-    description: "A CLI Node.js application for employee management with MySQL database integration.",
+    description: "A command-line interface application for comprehensive employee management with MySQL database integration.",
     features: [
-      "Command-line interface",
-      "MySQL database integration", 
-      "CRUD operations for employees"
+      "Full CRUD operations for employees, roles, and departments",
+      "MySQL database with complex relational data", 
+      "Command-line interface with interactive prompts",
+      "Budget tracking and department management",
+      "Data validation and error handling"
     ],
-    technologies: ["Node.js", "MySQL", "Inquirer", "CLI"],
+    technologies: ["Node.js", "MySQL", "Inquirer", "Database Design", "CLI"],
     liveLink: null,
-    codeLink: "https://github.com/shamik05/Employee-CMS",
+    codeLink: "https://github.com/shamik05/employee-cms",
     image: "/images/employee-cms.png",
+    gif: "/images/employee-cms.gif",
+    status: "Completed"
   }
 ];
