@@ -30,6 +30,7 @@ export default function ContactLinks() {
         timeoutRef.current = null;
       }, 2000);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error('Failed to copy: ', err);
     }
   };

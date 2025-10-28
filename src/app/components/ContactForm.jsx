@@ -25,7 +25,7 @@ export default function ContactForm() {
           <FaCheck className="w-16 h-16 mx-auto mb-4" />
           <h4 className="text-2xl font-bold mb-2">Message Sent!</h4>
           <p className="text-chess-light">
-            Thank you for reaching out. I'll get back to you soon!
+            Thank you for reaching out. I&apos;ll get back to you soon!
           </p>
         </motion.div>
       ) : (

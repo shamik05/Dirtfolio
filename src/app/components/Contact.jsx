@@ -16,10 +16,10 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-chess-dark mb-4">
-            Let's Connect!
+            Let&apos;s Connect!
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto italic">
-            "What is better than being a developer? Being a paid developer."
+            &quot;What is better than being a developer? Being a paid developer.&quot;
           </p>
           <p className="text-lg text-chess-brown font-semibold mt-2">
             — Joe Staller
