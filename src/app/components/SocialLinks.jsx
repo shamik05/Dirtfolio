@@ -47,6 +47,8 @@ export default function SocialLinks() {
                 href={social.href} 
                 className="transition-all hover:scale-110 hover:translate-x-1 block"
                 aria-label={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <social.icon className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
               </a>
@@ -66,6 +68,8 @@ export default function SocialLinks() {
               href={social.href}
               className="transition-transform hover:scale-110 block"
               aria-label={social.label}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <social.icon className="w-8 h-8 text-chess-dark hover:text-chess-green transition-colors" />
             </a>

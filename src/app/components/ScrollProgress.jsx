@@ -1,8 +1,7 @@
-// components/ScrollProgress.jsx
 "use client";
 
-import { motion, useScroll, useSpring } from "framer-motion";
 import { useEffect, useState } from "react";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const sections = [
   { id: "hero", label: "Home", position: 0 },
