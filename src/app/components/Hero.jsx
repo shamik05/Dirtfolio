@@ -20,23 +20,70 @@ const Hero = () => {
     { Icon: GiChessRook, position: 7 },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const pieceVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20,
+      scale: 0.8
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10
+      }
+    }
+  };
+
   return (
     <section id="hero" className="min-h-screen bg-chess-light flex items-center justify-center px-4 relative">
+  <div className="absolute inset-0">
+    <div 
+      className="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage: 'url("https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")'
+      }}
+    ></div>
+    <div className="absolute inset-0 bg-white/80"></div>
+  </div>
       <SocialLinks />
-
+      
       <div className="text-center max-w-2xl relative z-10">
-        <div className="mb-8 relative h-24 flex items-center justify-center">
+        <motion.div 
+          className="mb-8 relative h-24 flex items-center justify-center"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="flex items-center justify-center space-x-2 md:space-x-4">
             {pieces.map(({ Icon, position }) => (
-              <div key={position} className="relative">
-                <Icon className="w-8 h-8 md:w-12 md:h-12 text-chess-brown transition-colors duration-300" />
-              </div>
+              <motion.div 
+                key={position} 
+                className="relative"
+                variants={pieceVariants}
+              >
+                <Icon className="w-8 h-8 md:w-12 md:h-12 text-chess-brown transition-colors duration-300 hover:scale-110" />
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
         
         <motion.h1 
-          className="text-4xl md:text-6xl font-bold text-chess-dark mb-4"
+          className="text-4xl md:text-6xl font-bold text-chess-dark mb-7"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -54,12 +101,22 @@ const Hero = () => {
         </motion.p>
         
         <motion.p 
-          className="text-lg md:text-xl text-gray-700 mb-8 max-w-md mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-gray-700 mb-2 max-w-md mx-auto leading-relaxed italic"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          Strategic code, Spectacular blunders
+            &quot;What is better than being a developer?<br />
+            Being a paid developer.&quot;
+        </motion.p>
+        
+        <motion.p 
+          className="text-lg md:text-xlmb-8 max-w-md mx-auto mb-8 leading-relaxed text-chess-brown font-semibold mt-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+            — Joe Staller
         </motion.p>
 
         <MotionLink

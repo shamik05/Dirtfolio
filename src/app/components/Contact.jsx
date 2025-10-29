@@ -18,12 +18,6 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-bold text-chess-dark mb-4">
             Let&apos;s Connect!
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto italic">
-            &quot;What is better than being a developer? Being a paid developer.&quot;
-          </p>
-          <p className="text-lg text-chess-brown font-semibold mt-2">
-            — Joe Staller
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
