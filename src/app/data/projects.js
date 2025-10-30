@@ -28,7 +28,7 @@ export const projects = [
       "Responsive mobile-first design",
       "Clean, intuitive user interface"
     ],
-    technologies: ["React", "JavaScript", "Context API", "Custom Hooks", "CSS3", "HTML5"],
+    technologies: ["React", "Next.js", "JavaScript", "Context API", "Custom Hooks", "CSS3", "HTML5"],
     liveLink: "https://employee-directory-topaz-eight.vercel.app",
     codeLink: "https://github.com/shamik05/employee-directory",
     gif: "/images/employee-directory.gif",

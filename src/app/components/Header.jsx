@@ -1,4 +1,3 @@
-// components/Header.jsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -12,6 +11,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
+    { href: "#home", label: "Home" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
     { href: "#contact", label: "Contact" }
@@ -30,16 +30,14 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm' 
-        : 'bg-transparent'
+        : 'bg-white/90 backdrop-blur-sm'
     }`}>
       <nav className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Left: Name/Logo */}
           <MotionLink
             href="#hero"
-            className={`text-xl font-bold transition-colors duration-300 ${
-              scrolled ? 'text-chess-dark' : 'text-white'
-            }`}
+            className="text-xl font-bold text-chess-dark transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -57,13 +55,9 @@ const Header = () => {
               animate={{ rotate: [0, 5, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 5 }}
             >
-              <FaTools className={`w-4 h-4 ${
-                scrolled ? 'text-chess-brown' : 'text-white'
-              }`} />
+              <FaTools className="w-4 h-4 text-chess-brown" />
             </motion.div>
-            <span className={`text-sm font-medium ${
-              scrolled ? 'text-gray-600' : 'text-white/90'
-            }`}>
+            <span className="text-sm font-medium text-gray-700">
               Under Construction
             </span>
           </motion.div>
@@ -74,11 +68,7 @@ const Header = () => {
               <MotionLink
                 key={item.href}
                 href={item.href}
-                className={`transition-colors duration-300 font-medium ${
-                  scrolled 
-                    ? 'text-gray-700 hover:text-chess-green' 
-                    : 'text-white/90 hover:text-white'
-                }`}
+                className="text-gray-700 hover:text-chess-green transition-colors duration-300 font-medium"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -101,7 +91,7 @@ const Header = () => {
           >
             <FaTools className="w-3 h-3 text-chess-brown" />
           </motion.div>
-          <span className="text-xs text-gray-600 font-medium">
+          <span className="text-xs text-gray-700 font-medium">
             Under Construction
           </span>
         </motion.div>
